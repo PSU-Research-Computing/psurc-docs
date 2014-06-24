@@ -2,14 +2,29 @@
 
 ## Veneno prope fauces flere
 
-Aparently this supports autoreloading!
-
-And yet!
-
 Lorem markdownum invia cum, ad eam puer profanat tune sacrata, nec. Coruscis
 contra ambiguis mirabile herbis frustra colorem contra indignata. In manus
 confecta sed simulat, tenebat ipsa optima. Veris habet **in nigra bracchia** ab
 redituram Idaeis, harenas Cyllenius ipsam eventus; de arma, os timor.
+
+```python
+def fib(n): # write Fibonacci series up to n
+    a, b = 0, 1
+    while b < n:
+        print b,
+        a, b = b, a+b
+
+def fib2(n): # return Fibonacci series up to n
+    result = []
+    a,b = 0, 1
+    while b < n:
+        result.append(b)
+        a, b = b, a+b
+    return result
+if __name__ == "__main__":
+    import sys
+    fib(int(sys.argv[1]))
+```
 
 ## Dorso in dum hospes ingens ruit vellere
 
