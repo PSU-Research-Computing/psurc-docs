@@ -18,7 +18,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   gettig-started
+   getting-started
    linux-clusters
    research-servers
 
