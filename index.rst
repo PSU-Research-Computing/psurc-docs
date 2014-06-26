@@ -6,12 +6,11 @@
 Welcome to ARC Docs
 ===================
 
-ARC Docs is a collection of documents, notes, instructions and tutorials that help explain the subtler points relating to the resources available to students and faculty provided by `Academic & Research Computing`_ through PSU_/s OIT_.  Please direct any errors or questions to consultants@pdx.edu or submit a pull request with proposed changes.
+ARC Docs is a collection of documents, notes, instructions and tutorials that help explain the subtler points relating to the resources available to students and faculty provided by `Academic & Research Computing`_ through PSU_\s OIT_.  Please direct any errors or questions to consultants@pdx.edu or submit a pull request with proposed changes.
 
 .. _`Academic & Research Computing`: http://www.pdx.edu/arc/academic-and-research-computing
 .. _PSU: http://www.pdx.edu
 .. _OIT: http://www.pdx.edu/oit/
-
 
 Contents:
 
@@ -21,13 +20,3 @@ Contents:
    getting-started
    linux-clusters
    research-servers
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
