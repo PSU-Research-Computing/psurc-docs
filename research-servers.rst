@@ -21,7 +21,7 @@ You must add the following lines in either your ``~/.bash_profile`` or ``~/.bash
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)" 
 
-Not sure which file to edit? See :ref:`Getting your dotfiles in order`.
+Not sure which file to edit? See :ref:`dotfiles`.
 
 Now resource your settings file (IE ``source ~/.bashrc``) or log in and out.
 
