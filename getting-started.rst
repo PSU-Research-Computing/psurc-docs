@@ -16,11 +16,13 @@ Check which shell you are running
 Log into any research server and enter the following command:
 
 .. highlight:: sh
+  
   echo $0
 
 If you see any kind of output other than something like this:
 
 .. highlight:: sh
+  
   bash
 
 then you are likely running some other shell by default, most likely tcsh or some variation of this.  This command tells you what your active shell is.
@@ -36,6 +38,7 @@ What to do in the meantime
 You can always switch over to bash by typing the following into the console no matter what your default shell is set to:
 
 .. highlight:: sh
+  
   bash
 
 Get your dotfiles in order
@@ -51,6 +54,7 @@ Load ``.bashrc`` from ``.bash_profile``
 By loading ``.bashrc`` from ``.bash_profile`` you can simplify your life by (mostly) just having to worry about making changes to a single file.  Add the following lines to your ``.bash_profile`` file in your home directory.
 
 .. code-block:: sh
+  
   # Enable .bashrc
   # If running bash
   if [ -n "$BASH_VERSION" ]; then
