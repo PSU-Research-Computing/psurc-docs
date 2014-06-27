@@ -34,19 +34,19 @@ What to do in the meantime
 
 You can always switch over to bash by typing the following into the console no matter what your default shell is set to after logging in::
   
-  bash
+  > bash
 
 Get your dotfiles in order
 --------------------------
 
-Dotfiles (files that live in your home directory that start with a '.') are hidden preference files that allow you to change your shell environment and settings for different unix programs.  You can see these files by passing the ``-a`` flag to the ``ls`` command.
+Dotfiles (files that live in your home directory that start with a ``.``) are hidden preference files that allow you to change your shell environment and settings for different unix programs.  You can see these files by passing the ``-a`` flag to the ``ls`` command.
 
 Confused about the differences between ``.bashrc`` and ``.bash_profile``? 
 
-Load ``.bashrc`` from ``.bash_profile``
+Load ``.bashrc`` from ``.bash_profile``:
 ```````````````````````````````````````
 
-By loading ``.bashrc`` from ``.bash_profile`` you can simplify your life by (mostly) just having to worry about making changes to a single file.  Add the following lines to your ``.bash_profile`` file in your home directory.
+By loading ``.bashrc`` from ``.bash_profile`` you can simplify your life by (mostly) just having to worry about making settings changes to a single file (``.bashrc``).  Add the following lines to your ``.bash_profile`` file in your home directory.
 
 .. code-block:: sh
   
@@ -60,8 +60,6 @@ By loading ``.bashrc`` from ``.bash_profile`` you can simplify your life by (mos
   fi
 
 Now you can edit shell environments in ``.bashrc`` and it always works 
-
-
 
 Set up GNU ``screen`` for long running processes
 --------------------------------------------
@@ -112,13 +110,14 @@ Paste in the following settings using your preferred ``$EDITOR``
   hardstatus alwayslastline
   hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n* %f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
 
+This changes some subtle behavior and turns on a status bar making screen a little bit easier to wrap your head around.  It also turns off the anoying startup message.
 
 Using Screen
 ````````````
 
 Here is a quick walkthrough of how to use screen.  To start using ``screen``, run::
   
-  screen
+  > screen
 
 This opens a new ``screen`` session.  Type some commands into the window such as listing files (``ls``) or changing directory (``cd ..``).
 
@@ -132,9 +131,7 @@ Let go, then press::
 
 This should disconnect you from your screen session and take you back to where you were before you launch ``screen``.  You can have multiple ``screen`` sessions running at the same time (and have even more ``screen`` windows per ``screen`` session if you really want!).  
 
-.. note:: In the future, this kind of keyboard shortcut will be referred to as::
-  
-  Ctl-a d
+.. note:: In the future, this kind of keyboard shortcut will be referred to as ``Ctl-a d``
 
 To reconnect to screen type
 ```````````````````````````
