@@ -13,3 +13,13 @@ ARC Docs is a collection of documents, notes, instructions and tutorials that he
 .. _`Academic & Research Computing`: http://www.pdx.edu/arc/academic-and-research-computing
 .. _PSU: http://www.pdx.edu
 .. _OIT: http://www.pdx.edu/oit/
+
+Contents:
+---------
+
+.. toctree::
+   :maxdepth: 2
+
+   getting-started
+   linux-clusters
+   research-servers
