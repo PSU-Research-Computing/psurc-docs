@@ -136,7 +136,8 @@ This should disconnect you from your screen session and take you back to where y
 To reconnect to screen type
 ```````````````````````````
 .. code-block:: sh
-  $ screen -ls
+  
+  > screen -ls
   There is a screen on:
    19250.pts-8.rocks (Detached)
   1 Socket in /var/run/screen/S-bcomnes.
