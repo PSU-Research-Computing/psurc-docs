@@ -19,7 +19,8 @@ Log into any research server and enter the following command::
 
 If you see any kind of output other than something like this::
   
-  bash
+  > echo $0
+  -bash
 
 then you are likely running some other shell by default, most likely tcsh or some variation of this.  This command tells you what your active shell is.
 
