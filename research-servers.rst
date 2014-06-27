@@ -1,6 +1,13 @@
 Research Servers
 ================
 
-Hi
+TODO: Include information about hydra and circe
 
-Yes we can make new changes.
+
+- Language References:
+
+- Information on python
+
+- Information on perl
+  
+  - More information on perlbrew
