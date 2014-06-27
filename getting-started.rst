@@ -36,8 +36,8 @@ You can always switch over to bash by typing the following into the console no m
   
   > bash
 
-Get your dotfiles in order
---------------------------
+Getting your dotfiles in order
+------------------------------
 
 Dotfiles (files that live in your home directory that start with a ``.``) are hidden preference files that allow you to change your shell environment and settings for different unix programs.  You can see these files by passing the ``-a`` flag to the ``ls`` command.
 
@@ -133,8 +133,10 @@ This should disconnect you from your screen session and take you back to where y
 
 .. note:: In the future, this kind of keyboard shortcut will be referred to as ``Ctl-a d``
 
-To reconnect to screen type
-```````````````````````````
+Reconnecting to screen
+``````````````````````
+To reconnect to screen, we can type ``screen -ls`` similar to list the running screen sessions.  (Similar to how ``ls`` will list the files in the current directory).
+
 .. code-block:: sh
   
   > screen -ls
@@ -146,7 +148,7 @@ This lists the running screen sessions.  Each session has a number associated wi
   
   screen -r 19250
 
-where ‘19250’ is the number associated with the screen session you want to connect to.  
+where ``19250`` is the number associated with the screen session you want to connect to.  
 
 To end a screen session, reconnect to it, and just exit out of all the processies running and then end the session by typing::
   
@@ -154,9 +156,14 @@ To end a screen session, reconnect to it, and just exit out of all the processie
 
 There are lots of cool ``screen`` features.  Here is a quick rundown of screen window management:
 
-- ``Ctl-a c`` Create a window in the current screen session
+``Ctl-a c``
+  Create a window in the current screen session
 
-- ``Ctl-a n`` Go to the next window in the current screen session
+``Ctl-a n``
+  Go to the next window in the current screen session
+
+``Ctl-a d``
+  Disconnect from current screen session.
 
 Set up SSH keys and config files
 --------------------------------
