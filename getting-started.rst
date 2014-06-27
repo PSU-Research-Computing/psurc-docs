@@ -36,6 +36,8 @@ You can always switch over to bash by typing the following into the console no m
   
   > bash
 
+.. _dotfiles:
+
 Getting your dotfiles in order
 ------------------------------
 

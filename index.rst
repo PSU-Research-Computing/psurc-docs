@@ -21,5 +21,5 @@ Contents:
    :maxdepth: 2
 
    getting-started
-   linux-clusters
    research-servers
+   linux-clusters
