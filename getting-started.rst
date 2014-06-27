@@ -13,12 +13,14 @@ You may not be running bash, but you should.  The research servers often set you
 Check which shell you are running
 `````````````````````````````````
 
-Log into any research server and enter the following command::
+Log into any research server and enter the following command:
 
+.. code-block:: bash
   echo $0
 
-If you see any kind of output other than something like::
+If you see any kind of output other than something like this:
 
+.. code-block:: bash
   bash
 
 then you are likely running some other shell by default, most likely tcsh or some variation of this.  This command tells you what your active shell is.
@@ -31,11 +33,10 @@ Send us a quick request from your pdx email address requesting that your default
 What to do in the meantime
 ``````````````````````````
 
-You can always switch over to bash by typing::
+You can always switch over to bash by typing the following into the console no matter what your default shell is set to:
 
+.. code-block:: bash
   bash
-
-into the console, no matter what your default shell is set to.
 
 Get your dotfiles in order
 --------------------------
@@ -44,9 +45,12 @@ Dotfiles (files that live in your home directory that start with a '.') are hidd
 
 Confused about the differences between ``.bashrc`` and ``.bash_profile``? 
 
-Add the following lines to .bash_profile
-`````````````````````````````````````````
-::
+Load ``.bashrc`` from ``.bash_profile``
+```````````````````````````````````````
+
+By loading ``.bashrc`` from ``.bash_profile`` you can simplify your life by (mostly) just having to worry about making changes to a single file.  Add the following lines to your ``.bash_profile`` file in your home directory.
+
+.. code-block:: bash
   # Enable .bashrc
   # If running bash
   if [ -n "$BASH_VERSION" ]; then
