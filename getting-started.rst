@@ -14,9 +14,11 @@ Check which shell you are running
 `````````````````````````````````
 
 Log into any research server and enter the following command::
+  
   echo $0
 
 If you see any kind of output other than something like this::
+  
   bash
 
 then you are likely running some other shell by default, most likely tcsh or some variation of this.  This command tells you what your active shell is.
@@ -30,6 +32,7 @@ What to do in the meantime
 ``````````````````````````
 
 You can always switch over to bash by typing the following into the console no matter what your default shell is set to after logging in::
+  
   bash
 
 Get your dotfiles in order
@@ -70,6 +73,7 @@ Configuring Screen
 Before we start, lets add as simple configuration file that vastly improves the screen programs behavior.
 
 Create a file in your home directory called ``.screenrc``::
+  
   touch ~/.screenrc
 
 Paste in the following settings using your preferred ``$EDITOR``
@@ -112,19 +116,23 @@ Using Screen
 ````````````
 
 Here is a quick walkthrough of how to use screen.  To start using ``screen``, run::
+  
   screen
 
 This opens a new ``screen`` session.  Type some commands into the window such as listing files (``ls``) or changing directory (``cd ..``).
 
 Now we can disconnect from this screen and have it continue to run in the background.  ``screen`` uses keyboard shortcuts where you press two keys at once, let go, then press the next key to actually issue the command.  First press the two keys at the same time::
+  
   Ctl-a
 
 Let go, then press::
+  
   d
 
 This should disconnect you from your screen session and take you back to where you were before you launch ``screen``.  You can have multiple ``screen`` sessions running at the same time (and have even more ``screen`` windows per ``screen`` session if you really want!).  
 
 .. note:: In the future, this kind of keyboard shortcut will be referred to as::
+  
   Ctl-a d
 
 To reconnect to screen type
@@ -136,11 +144,13 @@ To reconnect to screen type
   1 Socket in /var/run/screen/S-bcomnes.
 
 This lists the running screen sessions.  Each session has a number associated with it.  To reconnect to a particular screen session type::
+  
   screen -r 19250
 
 where ‘19250’ is the number associated with the screen session you want to connect to.  
 
 To end a screen session, reconnect to it, and just exit out of all the processies running and then end the session by typing::
+  
   exit
 
 There are lots of cool ``screen`` features.  Here is a quick rundown of screen window management:
