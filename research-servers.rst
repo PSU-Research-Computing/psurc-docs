@@ -15,7 +15,7 @@ Activate pyenv in your environment
 ``````````````````````````````````
 You must add the following lines in either your ``~/.bash_profile`` or ``~/.bashrc file``
 
-.. codeblock:: sh
+.. code-block:: sh
 
   export PYENV_ROOT="/vol/apps/system/python/pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
