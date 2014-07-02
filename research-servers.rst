@@ -1,8 +1,15 @@
 Research Servers
 ================
 
-TODO: Include information about hydra and circe
+The following research servers are available for running serialized jobs:
 
++-------------------+-----------+-------+------------+----------------------------------+---------------------------------+
+| Server Domain     | Model     | Ram   | OS         | CPU                              | Cores                           |
++===================+===========+=======+============+==================================+=================================+
+| hecate.rc.pdx.edu | Dell R720 | 757GB | CentOS 6.5 | 2 x Intel Xeon E5-2690 @ 2.9 Ghz | 16 (2 x 8)32 w/ Hyper-threading |
++-------------------+           +-------+------------+----------------------------------+                                 +
+| cirece.rc.pdx.edu |           | 189GB | CentOS 6.5 | 2 x Intel Xeon E5-2665 @ 2.40GHz |                                 |
++-------------------+-----------+-------+------------+----------------------------------+---------------------------------+
 
 Information on Python
 ---------------------
