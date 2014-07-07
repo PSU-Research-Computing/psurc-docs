@@ -169,6 +169,54 @@ There are lots of cool ``screen`` features.  Here is a quick rundown of screen w
 
 Set up SSH keys and config files
 --------------------------------
+You can set up secure, password-free, connections to the servers using SSH keys.
+
+Generating Keypair
+``````````````````
+On your computer create a ssh RSA keypair by typing::
+
+  $ ssh keygen -t rsa 
+
+This creates a pair of keys (public and private). You can use a password if you wish, only people who have access to your id_rsa file can use your connection.
+
+Set folder permissions on server
+````````````````````````````````
+
+Open a ssh connection to the server and run the following::
+
+  $ touch ~/.ssh/authorized_keys
+  $ chmod 711 ~ && chmod 711 ~/.ssh && chmod 600 ~/.ssh/authorized_keys
+
+Upload public key to server
+```````````````````````````
+
+On your computer run the following::
+
+  $ cat ~/.ssh/id_rsa.pub | ssh [user]@[server]:~/.ssh/authorized_keys
+
+(change user and server as appropriate)
+
+The password-free login should now work. Connect by ``$ ssh [user]@[server]``
+
+Create aliases for servers
+``````````````````````````
+
+You can create aliases for the servers to more easily connect.
+
+Create a file in ``~/.ssh/`` called 'config' and add servers with the following format::
+
+  host [hostname]
+    hostname [server] user[username]
+
+Example::
+
+  host [example]
+    hostname [example.server.tld] user[myname]
+
+Now you can connect to the server running::
+
+  ssh example
+
 
 How to nice your processes
 --------------------------
