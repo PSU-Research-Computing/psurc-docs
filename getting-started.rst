@@ -217,6 +217,8 @@ Now you can connect to the server running::
 
   ssh example
 
+Which will connect to ``myname@example.server.tld``
+
 
 How to nice your processes
 --------------------------
