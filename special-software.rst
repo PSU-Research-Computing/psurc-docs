@@ -16,5 +16,3 @@ It also includes tools that can take advantage of NVIDIA CUDA running on support
 - :ref:`pgiCluster`
 
 .. _`Cluster Development Kit`: https://www.pgroup.com/products/pgicdk.htm
-
-

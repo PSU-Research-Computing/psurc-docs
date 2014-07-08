@@ -90,6 +90,7 @@ Information on perl
 Hi Perlmongers!  This is where we talk to you!
 
 .. _pgiResearch:
+
 PGI Cluster Development Kit: Research Servers
 ---------------------------------------------
 
