@@ -85,4 +85,11 @@ You can deactivate all virtualenviroments and revert back to system python by ty
 Information on perl
 -------------------
 
-Hi Perlmongers!
+Hi Perlmongers!  This is where we talk to you!
+
+.. _pgi-research:
+PGI Cluster Development Kit: Research Servers
+---------------------------------------------
+
+TODO: Instructions on how to run PGI on the reasearch servers!  Yay!
+
