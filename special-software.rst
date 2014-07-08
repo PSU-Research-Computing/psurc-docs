@@ -15,6 +15,6 @@ It also includes tools that can take advantage of NVIDIA CUDA running on support
 - PGI on Research Servers
 - PGI on Linux Clusters
 
-.. _'Cluster Development Kit`: https://www.pgroup.com/products/pgicdk.htm
+.. _`Cluster Development Kit`: https://www.pgroup.com/products/pgicdk.htm
 
 
