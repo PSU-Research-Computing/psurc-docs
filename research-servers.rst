@@ -18,7 +18,7 @@ The following research servers are available for running serialized jobs:
 +---------------+----------------------------------+----------------------------------+
 | **Cores**     | 16 (2 x 8)                                                          |
 +---------------+----------------------------------+----------------------------------+
-| **Hardware**  |                                  | Nvidia Tesla K20                 |
+| **Hardware**  |                                  | Nvidia Tesla K20 GPU             |
 +---------------+----------------------------------+----------------------------------+
 
 Information on Python
@@ -89,7 +89,7 @@ Information on perl
 
 Hi Perlmongers!  This is where we talk to you!
 
-.. _pgi-research:
+.. _pgiResearch:
 PGI Cluster Development Kit: Research Servers
 ---------------------------------------------
 

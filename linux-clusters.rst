@@ -7,7 +7,7 @@ TODO:  Include hardware specs and benchmarks for cluster here.
 - General cluster layout and information
 - How do I run non-mpi style programs on the cluster?
 
-.. _pgi-cluster:
+.. _pgiCluster:
 PGI Cluster Development Kit: Linux Cluster
 ---------------------------------------------
 
