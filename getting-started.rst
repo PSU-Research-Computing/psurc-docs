@@ -169,7 +169,9 @@ There are lots of cool ``screen`` features.  Here is a quick rundown of screen w
 
 Set up SSH keys and config files
 --------------------------------
-You can set up secure, password-free, connections to the servers using SSH keys.
+You can enable secure, password-free authentication to the ARC servers using SSH keys.  SSH keys are a public/private key system that is more secure than traditional passwords, and offers a more convienent login mechanism than typing in your password every time you connect.
+
+SSH Keys work by generating two cryptographic key files.  One of the files is private (keep it a secret!) and the other is public (it doesn't matter if someone gets a copy of it, but dont unessisarily distribute it).   
 
 Generating Keypair
 ``````````````````
@@ -177,7 +179,20 @@ On your computer create a ssh RSA keypair by typing::
 
   $ ssh keygen -t rsa 
 
-This creates a pair of keys (public and private). You can use a password if you wish, only people who have access to your id_rsa file can use your connection.
+This creates a pair of keys (public ``id_rsa.pub`` and private ``id_rsa``).  
+
+Should I set a Passphrase for my Priavte Key?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Yes!**
+
+Because it is really bad if someone gets a copy of your private key (``id_rsa``) you **should** set a passphrase for your private key.  This passphrase is used to encrypt the private key so that it cannot simply be used if a copy is made by a bad actor.  It also means that a password must be used every time your private key is needed. In order to avoid this anoyance, most modern operating systems will provide a keychain system that can keep track of and auto submit this private key passphrase.  On OS X, the ``Keychain.app`` will be your passphrase manager and will prompt you save the passphrase.  Most Linux distributions will automatically offer to save the password using it's flavor of passphrase manager.  You should accept the offer and let your system remember this.
+
+On windows, you can use a program such as pageant_ or keepass_ with the KeeAgent_ plugin.
+
+.. _pageant: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+.. _ keepass: http://keepass.info/download.html
+.. _KeeAgent: http://keepass.info/plugins.html#keeagent
 
 Set folder permissions on server
 ````````````````````````````````
