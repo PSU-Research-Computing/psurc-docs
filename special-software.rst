@@ -1,6 +1,8 @@
 Specialized Software
 ====================
 
+This page is used to describe specialized software that requires additional documentation in order to use and isn't necessarily specific to either the research systems or the clusters.  Specific instructions should reference information on the appropriate page, but general information that would otherwise be repeated can go here.
+
 Portland Group Cluster Development Kit (PGICDK)
 -----------------------------------------------
 
@@ -16,3 +18,14 @@ It also includes tools that can take advantage of NVIDIA CUDA running on support
 - :ref:`pgiCluster`
 
 .. _`Cluster Development Kit`: https://www.pgroup.com/products/pgicdk.htm
+
+PerlBrew
+--------
+
+TODO: Describe Perlbrew.
+
+PyEnv
+-----
+
+TODO: Describe Pyenv.
+

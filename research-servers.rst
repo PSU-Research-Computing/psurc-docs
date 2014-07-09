@@ -1,6 +1,11 @@
 Research Servers
 ================
 
+Here you will find information about the research servers as well as documentation about common issues and specialized instructions for running software on these servers.
+
+Servers and Hardware
+--------------------
+
 The following research servers are available for running serialized jobs:
 
 +---------------+----------------------------------+----------------------------------+
