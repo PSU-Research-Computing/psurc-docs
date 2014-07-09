@@ -94,7 +94,7 @@ You can deactivate all virtualenviroments and revert back to system python by ty
 Information on perl
 -------------------
 
-Hi Perlmongers!  This is where we talk to you!
+TODO: Describe Perlbrew on Research systems.
 
 .. _pgiResearch:
 

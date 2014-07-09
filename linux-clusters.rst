@@ -8,9 +8,7 @@ Servers and Hardware
 
 TODO:  Include hardware specs and benchmarks for cluster here.
 
-- How to use the scheduler for MPI style programs
-- General cluster layout and information
-- How do I run non-mpi style programs on the cluster?
+TODO: General cluster layout and information.
 
 .. _pgiCluster:
 
@@ -28,6 +26,10 @@ Slurm: The Cluster Scheduler
 ----------------------------
 
 TODO: Write about slurm.
+
+How to use the scheduler for MPI style programs.
+
+TODO: How do I run non-mpi style programs on the cluster?
 
 PGI Cluster Development Kit: Linux Cluster
 ---------------------------------------------
