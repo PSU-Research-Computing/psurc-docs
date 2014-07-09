@@ -202,6 +202,8 @@ Open a ssh connection to the server and run the following::
   $ touch ~/.ssh/authorized_keys
   $ chmod 711 ~ && chmod 711 ~/.ssh && chmod 600 ~/.ssh/authorized_keys
 
+.. note:: Because of some existing configuration errors, home folders are created with incorrect permissions.  In order for ssh keys to work, you must set these correct permissions on the appropriate folders and files.
+
 Upload public key to server
 ```````````````````````````
 
