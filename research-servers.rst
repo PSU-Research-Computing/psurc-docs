@@ -28,12 +28,18 @@ The following research servers are available for running serialized jobs:
 | **HyperThreading**   | Enabled                | Enabled                |
 +----------------------+------------------------+------------------------+
 
+Usage Tips
+``````````
+
+TODO: Talk about which servers are best for what.
+
+
 Information on Python
 ---------------------
 
-It can be difficult and cause programs to update the system level python in CentOS. For this reason, we offer an alternate python installation that you can activate if you wish.
+It is difficult to update python beyond the version CentOS provides at the system level.  For this reason, ARC offers an alternate python environments using ``pyenv``.
 
-If you are interested in installing your own python packages to your home folder, you must do so in a virtual environment.  In short, switch to the version of python that you want in your virtualenv using pyenv, create the virtualenv, and procede to do all your development in that virualenv going forward.
+If you are interested in installing your own python packages to your home folder, you must do so in a virtual environment.  In short, switch to the version of python that you want in your ``virtualenv`` using ``pyenv``, create the ``virtualenv``, and proceed to do all your development in that ``virualenv`` going forward.
 
 Activate pyenv in your environment
 ``````````````````````````````````
