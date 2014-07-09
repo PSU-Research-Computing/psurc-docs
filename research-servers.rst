@@ -9,7 +9,7 @@ Servers and Hardware
 The following research servers are available for running serialized jobs:
 
 +----------------------+------------------------+------------------------+
-| Server Domain        | ``hecate.rc.pdx.edu``  | ``cirece.rc.pdx.edu``  |
+| Server Domain        | ``hecate.rc.pdx.edu``  | ``circe.rc.pdx.edu``   |
 +======================+========================+========================+
 | **Model**            | Dell R720                                       |
 +----------------------+------------------------+------------------------+
