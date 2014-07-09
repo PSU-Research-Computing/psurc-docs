@@ -53,7 +53,7 @@ You must add the following lines in either your ``~/.bash_profile`` or ``~/.bash
 
 Not sure which file to edit? See :ref:`dotfiles`.
 
-Now resource your settings file (IE ``source ~/.bashrc``) or log in and out.
+Now re-``source`` your settings file (IE ``source ~/.bashrc``) or log in and out.
 
 Check which versions of python are available
 ````````````````````````````````````````````
