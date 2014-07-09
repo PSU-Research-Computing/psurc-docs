@@ -191,18 +191,17 @@ Because it is really bad if someone gets a copy of your private key (``id_rsa``)
 On windows, you can use a program such as pageant_ or keepass_ with the KeeAgent_ plugin.
 
 .. _pageant: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
-.. _ keepass: http://keepass.info/download.html
+.. _keepass: http://keepass.info/download.html
 .. _KeeAgent: http://keepass.info/plugins.html#keeagent
 
 Set folder permissions on server
 ````````````````````````````````
+Because of some existing configuration errors, home folders are created with incorrect permissions.  In order for ssh keys to work, you must set these correct permissions on the appropriate folders and files.
 
 Open a ssh connection to the server and run the following::
 
   $ touch ~/.ssh/authorized_keys
   $ chmod 711 ~ && chmod 711 ~/.ssh && chmod 600 ~/.ssh/authorized_keys
-
-.. note:: Because of some existing configuration errors, home folders are created with incorrect permissions.  In order for ssh keys to work, you must set these correct permissions on the appropriate folders and files.
 
 Upload public key to server
 ```````````````````````````
@@ -214,6 +213,8 @@ On your computer run the following::
 (change user and server as appropriate)
 
 The password-free login should now work. Connect by ``$ ssh [user]@[server]``
+
+.. note:: You can create a single public/private key per device you connect from, or create a single key pair that is used on all your devices.  Each method has it's pros and cons relating to key invalidation.  If you generate a key per device, you can simple append additional public keys on new lines in the ``~/.ssh/authorized_keys`` file.
 
 Create aliases for servers
 ``````````````````````````
