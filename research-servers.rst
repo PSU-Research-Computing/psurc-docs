@@ -1,7 +1,7 @@
 Research Servers
 ================
 
-Here you will find information about the research servers as well as documentation about common issues and specialized instructions for running software on these servers.
+This page contains information about the research servers and the software that is installed on them that require specialized instructions.
 
 Servers and Hardware
 --------------------

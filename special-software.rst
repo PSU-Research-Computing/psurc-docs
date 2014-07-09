@@ -1,7 +1,9 @@
 Specialized Software
 ====================
 
-This page is used to describe specialized software that requires additional documentation in order to use and isn't necessarily specific to either the research systems or the clusters.  Specific instructions should reference information on the appropriate page, but general information that would otherwise be repeated can go here.
+This page is used to describe specialized software that requires additional documentation in order to use and isn't necessarily specific to either the research systems or the clusters.  
+
+Information Specific to either the cluster or the research servers should live on the appropriate page and be referenced from here.
 
 Portland Group Cluster Development Kit (PGICDK)
 -----------------------------------------------
