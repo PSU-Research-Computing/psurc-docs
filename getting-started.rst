@@ -241,5 +241,9 @@ Which will connect to ``myname@example.server.tld``
 How to nice your processes
 --------------------------
 
+TODO: Write about nice!  Start with the ARC website info.
+
 Setting up programs in your home directory
 ------------------------------------------
+
+TODO: Describe how to compile thngs from source and install them to your home directory using stow.
