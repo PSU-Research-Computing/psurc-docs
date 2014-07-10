@@ -100,7 +100,28 @@ You can deactivate all virtualenviroments and revert back to system python by ty
 Information on perl
 -------------------
 
-TODO: Describe Perlbrew on Research systems.
+To use an updated ``perl`` version we need to use ``perlbrew`` and point it at the ``perlbrew`` install that works system wide.  
+
+1. Make sure you are running bash as your default shell.
+2. Add the following two lines to your .bashrc file::
+  
+  export PERLBREW_ROOT=/vol/apps/system/perl/perlbrew
+  source $PERLBREW_ROOT/etc/bashrc
+
+3. Run this command to see which versions of perl are available::
+
+  perlbrew list
+
+4. Run this command to activate  the version you want::
+  
+  perlbrew switch perl-5.18.1
+
+.. note:: Make sure you use the the correct version that is listed as available above.
+
+5. Run this command to switch back to system ``perl``::
+
+  perlbrew switch-off
+
 
 .. _pgiResearch:
 
