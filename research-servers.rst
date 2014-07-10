@@ -103,10 +103,8 @@ Information on ``perl``
 
 To use an updated ``perl`` version we need to use ``perlbrew`` and point it at the ``perlbrew`` install that works system wide.  
 
-Make sure you are running bash as your default shell.
+Make sure you are running bash as your default shell the add the following two lines to your ``.bashrc`` file::
 
-Add the following two lines to your .bashrc file::
-  
   export PERLBREW_ROOT=/vol/apps/system/perl/perlbrew
   source $PERLBREW_ROOT/etc/bashrc
 
@@ -115,7 +113,7 @@ Run this command to see which versions of perl are available::
   perlbrew list
 
 Run this command to activate  the version you want::
-  
+
   perlbrew switch perl-5.18.1
 
 .. note:: Make sure you use the the correct version that is listed as available above.
@@ -130,5 +128,25 @@ Run this command to switch back to system ``perl``::
 PGI Cluster Development Kit: Research Servers
 ---------------------------------------------
 
-TODO: Instructions on how to run PGI on the reasearch servers!  Yay!
+To use the PGI compiler you have to enable it.  While it it is worth reading through the PGI documentation on how to fully do this, here is a quick set of instructions to get you started.
+
+PGI is installed in::
+
+  /vol/apps/system/pgicdk
+
+You can gain access to its tools by adding the following to your ``.bashrc`` file::
+
+  export PGI=/vol/apps/system/pgi
+  export PATH=$PGI/linux86-64/2014/bin:$PATH
+  export MANPATH=$MANPATH:$PGI/linux86-64/2014/man
+  export LM_LICENSE_FILE=$LM_LICENSE_FILE:27005@pgi.license.pdx.edu:$PGI/license.dat
+
+PGI comes with its own versions of openMPI and MPICH.  You can enable MPICH for example, by these by adding this to your ``.bashrc`` file as well::
+
+  export PATH=$PGI/linux86-64/14.6/mpi/mpich/bin:$PATH
+  export MANPATH=$MANPATH:$PGI/linux86-64/14.6/mpi/mpich/man
+
+ARC has a license for the cluster development kit.
+
+
 
