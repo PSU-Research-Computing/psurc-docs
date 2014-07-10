@@ -148,5 +148,13 @@ PGI comes with its own versions of openMPI and MPICH.  You can enable MPICH for 
 
 ARC has a license for the cluster development kit.
 
+System MPI
+----------
 
+Message passing has been installed on the research system, but has to be enabled using the module system.   Here are examples on how to do that if you need those::
+
+  module load openmpi-x86_64
+  module load mpich2-x86_64
+
+These commands can be added to your ``.bashrc`` if you need them routinely. 
 
