@@ -241,7 +241,26 @@ Which will connect to ``myname@example.server.tld``
 How to nice your processes
 --------------------------
 
-TODO: Write about nice!  Start with the ARC website info.
+It is importaint to ``nice`` intensive processes so that they dont interfear with using the most basic functions of the research server such as changing directories or moving files. 
+
+The ``nice`` and ``renice`` adjust the priority of processs.  ARC recomends that all users ``nice`` all of their pricesses with a value of at least 5.  To nice a process when it is started type::
+
+  $ nice +5 [other_commands]
+
+where ``[other_commands]`` is the command you actually wan to run.  If you have already started a job and want to nice it after the fact, you can use the ``renice`` command to do this.  First identify the process ID that you wish to nice::
+
+  $ ps -u
+
+Then run ``renice`` on it::
+
+  $ renice +5 [PID]
+
+where ``[PID]`` is the process ID.
+
+Using ``htop`` to keep an eye on the server
+-------------------------------------------
+
+You can use a program called ``htop`` to keep an eye on the server. 
 
 Setting up programs in your home directory
 ------------------------------------------
