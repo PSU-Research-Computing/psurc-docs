@@ -10,6 +10,17 @@ TODO:  Include hardware specs and benchmarks for cluster here.
 
 TODO: General cluster layout and information.
 
+.. figure:: /img/gravel.JPG
+   :alt: The Gravel Cluster.
+
+   A photo of the Gravel Cluster blade servers.
+
+
+.. figure:: /img/hydra.JPG
+   :alt: The Hydra Cluster.
+
+   A photo of the Hydra Cluster servers.
+
 .. _pgiCluster:
 
 ROCKS: The Cluster Distribution
