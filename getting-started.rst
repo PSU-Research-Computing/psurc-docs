@@ -8,7 +8,7 @@ Here are some steps that will help set up a nice research shell environment.
 Make sure bash is your default shell
 ------------------------------------
 
-You may not be running bash, but you should.  The research servers often set your default shell to tcsh, but you should really be using bash.  This document will describe how to check which shell you are running by default, and what you should do if if its not set to bash.
+You may not be running bash, but you should.  The research servers often set your default shell to ``tcsh``, but you should really be using bash.  This document will describe how to check which shell you are running by default, and what you should do if if its not set to bash.
 
 Check which shell you are running
 `````````````````````````````````
@@ -22,12 +22,12 @@ If you see any kind of output other than something like this::
   > echo $0
   -bash
 
-then you are likely running some other shell by default, most likely tcsh or some variation of this.  This command tells you what your active shell is.
+then you are likely running some other shell by default, most likely ``tcsh`` or some variation of this.  This command tells you what your active shell is.
 
 What to do if my default shell is NOT bash?
 ```````````````````````````````````````````
 
-Send us a quick request from your pdx email address requesting that your default research account shell be set to bash.  
+Send us a quick request from your PDX email address requesting that your default research account shell be set to bash.  
 
 What to do in the meantime
 ``````````````````````````
@@ -112,7 +112,7 @@ Paste in the following settings using your preferred ``$EDITOR``
   hardstatus alwayslastline
   hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n* %f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
 
-This changes some subtle behavior and turns on a status bar making screen a little bit easier to wrap your head around.  It also turns off the anoying startup message.
+This changes some subtle behavior and turns on a status bar making screen a little bit easier to wrap your head around.  It also turns off the annoying startup message.
 
 Using Screen
 ````````````
@@ -152,7 +152,7 @@ This lists the running screen sessions.  Each session has a number associated wi
 
 where ``19250`` is the number associated with the screen session you want to connect to.  
 
-To end a screen session, reconnect to it, and just exit out of all the processies running and then end the session by typing::
+To end a screen session, reconnect to it, and just exit out of all the processes running and then end the session by typing::
   
   exit
 
@@ -169,9 +169,9 @@ There are lots of cool ``screen`` features.  Here is a quick rundown of screen w
 
 Set up SSH keys and config files
 --------------------------------
-You can enable secure, password-free authentication to the ARC servers using SSH keys.  SSH keys are a public/private key system that is more secure than traditional passwords, and offers a more convienent login mechanism than typing in your password every time you connect.
+You can enable secure, password-free authentication to the ARC servers using SSH keys.  SSH keys are a public/private key system that is more secure than traditional passwords, and offers a more convenient login mechanism than typing in your password every time you connect.
 
-SSH Keys work by generating two cryptographic key files.  One of the files is private (keep it a secret!) and the other is public (it doesn't matter if someone gets a copy of it, but dont unessisarily distribute it).   
+SSH Keys work by generating two cryptographic key files.  One of the files is private (keep it a secret!) and the other is public (it doesn't matter if someone gets a copy of it, but don't unnecessarily distribute it).   
 
 Generating Keypair
 ``````````````````
@@ -181,7 +181,7 @@ On your computer create a ssh RSA keypair by typing::
 
 This creates a pair of keys (public ``id_rsa.pub`` and private ``id_rsa``).  
 
-Should I set a Passphrase for my Priavte Key?
+Should I set a Passphrase for my Private Key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Yes!**
@@ -241,9 +241,9 @@ Which will connect to ``myname@example.server.tld``
 How to nice your processes
 --------------------------
 
-It is importaint to ``nice`` intensive processes so that they dont interfear with using the most basic functions of the research server such as changing directories or moving files. 
+It is important to ``nice`` intensive processes so that they don't interfere with using the most basic functions of the research server such as changing directories or moving files. 
 
-The ``nice`` and ``renice`` adjust the priority of processs.  ARC recomends that all users ``nice`` all of their pricesses with a value of at least 5.  To nice a process when it is started type::
+The ``nice`` and ``renice`` commands adjust the priority of a process.  ARC recommends that all users ``nice`` all of their processes with a value of at least 5.  To nice a process when it is started type::
 
   $ nice +5 [other_commands]
 
@@ -262,12 +262,9 @@ Using ``htop`` to keep an eye on the server
 
 You can use a program called ``htop`` to keep an eye on the server. 
 
-.. figure:: /img/htop.png
-   :alt: A screenshot of the htop program running on hecate.
-
-   A screenshot of the htop program running on hecate.
+g
 
 Setting up programs in your home directory
 ------------------------------------------
 
-TODO: Describe how to compile thngs from source and install them to your home directory using stow.
+TODO: Describe how to compile things from source and install them to your home directory using stow.
