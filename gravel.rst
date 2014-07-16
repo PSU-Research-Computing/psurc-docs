@@ -85,7 +85,8 @@ under the lines::
 
    </Directory>
 
-Then run `$ service httpd restart`.
+Then run::
+  $ service httpd restart
 
 To enable ganglia as the frontpage, modify `/var/www/html/index.html` and change
 `URL=/wordpress/` to `URL=/ganglia/`.
