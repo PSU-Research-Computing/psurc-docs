@@ -92,8 +92,11 @@ To enable ganglia as the frontpage, modify `/var/www/html/index.html` and change
 `URL=/wordpress/` to `URL=/ganglia/`.
 
 Now set the firewall rules to make ganglia face the external network::
+
   $ rocks remove firewall host=localhost rulename=A40-WWW-PUBLIC-LAN
+
   $ rocks add firewall host=localhost network=public protocol=tcp service=www chain=INPUT \ action=ACCEPT flags="-m state --state NEW --source 0.0.0.0/0.0.0.0" \ rulename=A40-WWW-PUBLIC-NEW
+
   $ rocks sync host firewall localhost
 
 Ganglia should now be accessible by gravel.rc.pdx.edu in a browser.
