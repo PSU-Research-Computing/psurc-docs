@@ -56,13 +56,16 @@ Install Head Node
 Configure Head Node
 ```````````````````
 
-### Configure ldap
+Configure ldap
+**************
 
 See link
 
-### Web Access Setup
+Web Access Setup
+****************
 
-### Install Slurm
+Install Slurm
+*************
 
 	On the headnode::
 
