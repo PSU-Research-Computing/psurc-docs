@@ -1,7 +1,7 @@
-Gravel Cluster Installation - Rocks 6.1.1
-=========================================
+Gravel Cluster Installation
+===========================
 
-This is a guide to reloading the Rocks installation on the gravel cluster.
+This is a guide to reloading the Rocks 6.1.1 installation on the gravel cluster.
 
 Before Reloading
 ````````````````
