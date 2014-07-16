@@ -26,6 +26,7 @@ Contents:
    special-software
 
 Backend Notes:
+--------------
 
 .. toctree::
    :maxdepth: 2
