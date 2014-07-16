@@ -64,6 +64,39 @@ See link
 Web Access Setup
 ****************
 
+For security reasons wordpress and tripwire have to be disabled, this is
+accomplished by editting `/etc/httpd/conf/httpd.conf` and adding the lines::
+
+  <Directory "/var/www/html/wordpress">
+  deny from all
+  </Directory>
+
+  <Directory "/var/www/html/tripwire">
+  deny from all
+  </Directory>
+
+under the lines::
+
+  #
+  # Controls who can get stuff from this server.
+  #
+   Order allow,deny
+      Allow from all
+
+   </Directory>
+
+Then run `$ service httpd restart`.
+
+To enable ganglia as the frontpage, modify `/var/www/html/index.html` and change
+`URL=/wordpress/` to `URL=/ganglia/`.
+
+Now set the firewall rules to make ganglia face the external network::
+  $ rocks remove firewall host=localhost rulename=A40-WWW-PUBLIC-LAN
+  $ rocks add firewall host=localhost network=public protocol=tcp service=www chain=INPUT \ action=ACCEPT flags="-m state --state NEW --source 0.0.0.0/0.0.0.0" \ rulename=A40-WWW-PUBLIC-NEW
+  $ rocks sync host firewall localhost
+
+Ganglia should now be accessible by gravel.rc.pdx.edu in a browser.
+
 Install Slurm
 *************
 
