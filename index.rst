@@ -24,3 +24,10 @@ Contents:
    research-servers
    linux-clusters
    special-software
+
+Backend Notes:
+
+.. toctree::
+   :maxdepth: 2
+
+   gravel
