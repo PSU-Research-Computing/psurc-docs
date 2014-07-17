@@ -77,6 +77,6 @@ You can test to make sure ``g09`` is working properly and your environment is se
 
 .. literalinclude:: /examples/g09/g09-test.gjf
 
-`Download g09-test.gjf<https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-test.gjf>`_
+`Download g09-test.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-test.gjf>`_
 
 
