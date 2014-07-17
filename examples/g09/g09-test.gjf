@@ -1,0 +1,11 @@
+%nprocshared=8
+%mem=4GB
+%chk=test2.chk
+# opt hf/sto-3g nosymm
+
+Title Card Required
+
+0 1
+ O                 -0.37773358   -0.54671967    0.00000000
+ H                  0.58226642   -0.54671967    0.00000000
+ H                 -0.69818817    0.35821616    0.00000000
