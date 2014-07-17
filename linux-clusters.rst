@@ -85,7 +85,7 @@ Next set up a simple ``slurm`` script to schedule your your ``g09`` job.  Set up
 
 .. literalinclude:: /examples/g09/g09-slurm.sh
 
-`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-test.gjf>`_
+`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-slurm.sh>`_
 
 Note that we run a single ``g09`` job on a dedicated compute node with the above script.  To enqueue the job run::
 
