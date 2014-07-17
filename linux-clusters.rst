@@ -79,4 +79,24 @@ You can test to make sure ``g09`` is working properly and your environment is se
 
 `Download g09-test.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-test.gjf>`_
 
+This test file will run a single ``g09`` job using 8 threads and 4Gb of memory.
 
+Next set up a simple ``slurm`` script to schedule your your ``g09`` job.  Set up a simple bash script with some special directives in the header to do this:
+
+.. literalinclude:: /examples/g09/g09-slurm.sh
+
+`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-test.gjf>`_
+
+Note that we run a single ``g09`` job on a dedicated compute node with the above script.  To enqueue the job run::
+
+  sbatch g09-slurm.sh
+
+Now check the queue to see if your job has been accepted::
+
+  squeue
+
+We can keep an eye on activity using::
+
+  sinfo
+
+or by visiting the `ganglia monitoring tool <http://gravel.rc.pdx.edu>`_.
