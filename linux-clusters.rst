@@ -56,7 +56,10 @@ TODO: Describe FDTD.
 Gaussian G09
 ------------
 
-The Gaussian software is installed on the research systems and linux clusters and is available for use if you are authorized to use the available license.  You must be added to the ``gaussian`` unix group in order to run ``g09`` which should be specifically requested when requesting a research account.  
+The Gaussian software is installed on linux clusters and is available for use if you are authorized to use the available license.  You must be added to the ``gaussian`` unix group in order to run ``g09`` which should be specifically requested when requesting a research account.  
+
+Setting up ``g09`` 
+``````````````````
 
 ``g09`` requires some simple modifications to your user environment.  Add the following to to your ``~/.bashrc`` file::
 
@@ -70,6 +73,6 @@ The ``$GAUSS_SCRDIR`` env variable is used as the gaussian scratch folder.  For 
 Testing Gaussian
 ````````````````
 
-You can test to make sure ``g09`` is working properly and your environment is set up correctly by setting up a simple ``g09`` test and then writing a schelulings script to submit the job to ``slurm``, the cluster scheduler.  The following is a simple test:
+You can test to make sure ``g09`` is working properly and your environment is set up correctly by setting up a simple ``g09`` test and then writing a schelulings script to submit the job to ``slurm``, the cluster scheduler.  The following is a simple test::
 
 .. include:: /examples/g09/g09-test.gjf
