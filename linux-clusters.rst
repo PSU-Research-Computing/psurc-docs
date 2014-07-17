@@ -72,4 +72,4 @@ Testing Gaussian
 
 You can test to make sure ``g09`` is working properly and your environment is set up correctly by setting up a simple ``g09`` test and then writing a schelulings script to submit the job to ``slurm``, the cluster scheduler.  The following is a simple test:
 
-.. include:: /examples/g09/g09.gjf
+.. include:: /examples/g09/g09-test.gjf
