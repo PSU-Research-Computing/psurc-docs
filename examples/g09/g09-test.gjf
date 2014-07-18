@@ -1,5 +1,5 @@
 %nprocshared=8
-%mem=4GB
+%mem=2GB
 %chk=test2.chk
 # opt hf/sto-3g nosymm
 
