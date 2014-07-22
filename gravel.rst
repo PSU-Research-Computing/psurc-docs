@@ -19,7 +19,7 @@ Before Reloading
 	* /etc/skel/examples
 
 2. Create a Rocks Restore Roll for frontend, store ISO created somewhere safe::
-	
+
 	$ cd /export/site-roll/rocks/src/roll/restore
 	$ make roll
 
@@ -36,6 +36,10 @@ Before Reloading
 	gateway (eth2): x.x.x.x
 	public network interface: eth1
 	private network interface: eth0
+
+  `See Google Doc for Specifics`_
+
+  .. _See Google Doc for Specifics: https://docs.google.com/a/pdx.edu/document/d/1GcSt7srJzBzQgBdOGseoHH2UzXWIJI5e5Mvb2DfF2LE/edit?usp=sharing
 
 
 Install Head Node
@@ -111,9 +115,9 @@ Install Slurm
 		$ rocks enable roll slurm
 		$ cd /export/rocks/install
 		$ rocks create distro
-		$ yum clean all 
+		$ yum clean all
 		$ yum update
-		$ rocks run roll slurm|sh 
+		$ rocks run roll slurm|sh
 		$ reboot
 
 
