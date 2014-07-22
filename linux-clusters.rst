@@ -73,12 +73,13 @@ The ``$GAUSS_SCRDIR`` env variable is used as the gaussian scratch folder.  For 
 Testing Gaussian
 ````````````````
 
+.. warning:: Guassian will not run on the ``gravel.rc.pdx.edu`` cluster due to hardware incompatabilities.
+
 You can test to make sure ``g09`` is working properly and your environment is set up correctly by setting up a simple ``g09`` test and then writing a schelulings script to submit the job to ``slurm``, the cluster scheduler.  The following is a simple test:
 
 .. literalinclude:: /examples/g09/g09-test.gjf
 
 `Download g09-test.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-test.gjf>`_
-
 This test file will run a single ``g09`` job using 8 threads and 4Gb of memory.
 
 Next set up a simple ``slurm`` script to schedule your your ``g09`` job.  Set up a simple bash script with some special directives in the header to do this:
@@ -87,7 +88,9 @@ Next set up a simple ``slurm`` script to schedule your your ``g09`` job.  Set up
 
 `Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-slurm.sh>`_
 
-Note that we run a single ``g09`` job on a dedicated compute node with the above script.  To enqueue the job run::
+.. note:: This script will run a single ``g09`` job on a dedicated compute node with the above script.  Set the ``g09`` settings accordingly.
+
+To enqueue the job run::
 
   sbatch g09-slurm.sh
 
