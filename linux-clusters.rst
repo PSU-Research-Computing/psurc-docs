@@ -109,7 +109,7 @@ Setting up ``g09``
 ``g09`` requires some simple modifications to your user environment.  Add the following to to your ``~/.bashrc`` file::
 
   g09root="/share/apps"
-  GAUSS_SCRDIR="~/gaussian_scratch"
+  GAUSS_SCRDIR=$HOME/gaussian_scratch
   export g09root GAUSS_SCRDIR
   source $g09root/g09/bsd/g09.profile
 
