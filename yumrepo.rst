@@ -52,7 +52,7 @@ Procedures
 Add an RPM to the local repository on the head node
 ```````````````````````````````````````````````````
 
-Adapted from `<https://wiki.rocksclusters.org/wiki/index.php/FAQ#Q:_How_can_I_install_new.2Fupdated_RPM_packages_in_all_nodes.3F>`:: bash
+Adapted from `<https://wiki.rocksclusters.org/wiki/index.php/FAQ#Q:_How_can_I_install_new.2Fupdated_RPM_packages_in_all_nodes.3F>`::
   ssh hydra
 
 You need rootly powers::
@@ -61,35 +61,32 @@ or::
   sudo -s
 
 Get the RPM somewhere like a home directory, and see whether its
-dependencies are available and it can successfully install, e.g.:: bash
+dependencies are available and it can successfully install, e.g.::
   yum localinstall gsl-1.13-1.el6.x86_64.rpm
   yum localinstall gsl-devel-1.13-1.el6.x86_64.rpm
 
-Put the rpm here, so it can be added to the ROCKS yum repo:: bash
+Put the rpm here, so it can be added to the ROCKS yum repo::
   cp gsl-1.13-1.el6.x86_64.rpm /state/partition1/rocks/install/contrib/6.1/x86_64/RPMS
 
-Rebuild the distribution to copy the new package to the local repository and update the repository metadata:: bash
+Rebuild the distribution to copy the new package to the local repository and update the repository metadata::
   cd /export/rocks/install
   rocks create distro
 
 Add an RPM to the set of packages installed on new nodes
 ````````````````````````````````````````````````````````
 
-Extend the compute roll with entries for the new package(s): 
-.. code-block:: bash
+Extend the compute roll with entries for the new package(s)::
   vim /export/rocks/install/site-profiles/6.1/nodes/extend-compute.xml
 
-Add one "package line" (there is a real XML name for this) for each new package: 
-.. code-block:: xml
+Add one "package line" (there is a real XML name for this) for each new package::
   <package>gsl</package>
   <package>gsl-devel</package>
 
-Rebuild the distribution to add the new package list to the .iso:
-.. code-block: bash
+Rebuild the distribution to add the new package list to the .iso::
   cd /export/rocks/install
   rocks create distro
 
 Add an RPM in the local repository to existing compute nodes
 ````````````````````````````````````````````````````````````
-.. code-block:: bash
+::
   rocks run host "yum install gsl gsl-devel”
