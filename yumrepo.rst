@@ -52,8 +52,6 @@ Procedures
 Add an RPM to the local repository on the head node
 ```````````````````````````````````````````````````
 
-WTF meng
-
 Adapted from https://wiki.rocksclusters.org/wiki/index.php/FAQ#Q:_How_can_I_install_new.2Fupdated_RPM_packages_in_all_nodes.3F::
 
   ssh hydra
