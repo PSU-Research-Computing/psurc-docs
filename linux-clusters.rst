@@ -12,25 +12,24 @@ The following linux clusters are available for PSU students:
 Gravel Cluster
 --------------
 
-+----------------------+-------------------+---------------------+
-|    Server Domain     | gravel.rc.pdx.edu | compute-[0-2]-[0-9] |
-+======================+===================+=====================+
-| **Model**            |                   | Dell PowerEdge 1955 |
-+----------------------+-------------------+---------------------+
-| **RAM**              |                   |                     |
-+----------------------+-------------------+---------------------+
-| **OS**               |                   |                     |
-+----------------------+-------------------+---------------------+
-| **CPU**              |                   |                     |
-+----------------------+-------------------+---------------------+
-| **Clock**            |                   |                     |
-+----------------------+-------------------+---------------------+
-| **Cores**            |                   |                     |
-+----------------------+-------------------+---------------------+
-| **Special Hardware** |                   |                     |
-+----------------------+-------------------+---------------------+
-| **Hyper Theading**   |                   |                     |
-+----------------------+-------------------+---------------------+
++----------------------+-------------------------+-------------------------+
+|    Server Domain     |  ``gravel.rc.pdx.edu``  | ``compute-[0-2]-[0-9]`` |
++======================+=========================+=========================+
+| **Model**            | TODO: Gravel Head Model | Dell PowerEdge 1955     |
++----------------------+-------------------------+-------------------------+
+| **RAM**              | 4GB                     | 8GB                     |
++----------------------+-------------------------+-------------------------+
+| **OS**               | Rocks 6.1.1             | Rocks 6.1.1             |
++----------------------+-------------------------+-------------------------+
+| **CPU**              | Intel Xeon 5335         | 2 x Intel Xeon E5320    |
++----------------------+-------------------------+-------------------------+
+| **Clock**            | 2.00 GHz                | 1.86 GHz                |
++----------------------+-------------------------+-------------------------+
+| **Cores**            | 4                       | 8 (2 x 4)               |
++----------------------+-------------------------+-------------------------+
+| **Hyper Threading**  | Disabled                | Enabled                 |
++----------------------+-------------------------+-------------------------+
+
 
 .. figure:: /img/gravel.JPG
    :alt: The Gravel Cluster.
@@ -41,25 +40,25 @@ Gravel Cluster
 Hydra Cluster
 -------------
 
-+----------------------+----------------------+-------------------------+
-|    Server Domain     | ``hydra.rc.pdx.edu`` | ``compute-[0-2]-[0-9]`` |
-+======================+======================+=========================+
-| **Model**            |                      |                         |
-+----------------------+----------------------+-------------------------+
-| **RAM**              |                      |                         |
-+----------------------+----------------------+-------------------------+
-| **OS**               |                      |                         |
-+----------------------+----------------------+-------------------------+
-| **CPU**              |                      |                         |
-+----------------------+----------------------+-------------------------+
-| **Clock**            |                      |                         |
-+----------------------+----------------------+-------------------------+
-| **Cores**            |                      |                         |
-+----------------------+----------------------+-------------------------+
-| **Special Hardware** |                      |                         |
-+----------------------+----------------------+-------------------------+
-| **Hyper Theading**   |                      |                         |
-+----------------------+----------------------+-------------------------+
++----------------------+------------------------+--------------------------+----------------------+
+|    Server Domain     |  ``hydra.rc.pdx.edu``  |   ``compute-0-[0-13]``   | ``compute-1-[0-17]`` |
++======================+========================+==========================+======================+
+| **Model**            | TODO: Hydra Head Model | TODO: Dell PowerEdge 620 | Dell PowerEdge R900  |
++----------------------+------------------------+--------------------------+----------------------+
+| **RAM**              | 64GB                   | 66GB                     | 132GB                |
++----------------------+------------------------+--------------------------+----------------------+
+| **OS**               | Rocks 6.1.1            | Rocks 6.1.1              | Rocks 6.1.1          |
++----------------------+------------------------+--------------------------+----------------------+
+| **CPU**              |                        |                          |                      |
++----------------------+------------------------+--------------------------+----------------------+
+| **Clock**            |                        |                          |                      |
++----------------------+------------------------+--------------------------+----------------------+
+| **Cores**            |                        |                          |                      |
++----------------------+------------------------+--------------------------+----------------------+
+| **Special Hardware** |                        |                          |                      |
++----------------------+------------------------+--------------------------+----------------------+
+| **Hyper Threading**  |                        |                          |                      |
++----------------------+------------------------+--------------------------+----------------------+
 
 .. figure:: /img/hydra.JPG
    :alt: The Hydra Cluster.
@@ -113,7 +112,7 @@ Setting up ``g09``
   export g09root GAUSS_SCRDIR
   source $g09root/g09/bsd/g09.profile
 
-The ``$GAUSS_SCRDIR`` env variable is used as the gaussian scratch folder.  For now, leave this in your home directory and keep an eye on its size and clean up old files.
+The ``$GAUSS_SCRDIR`` env variable is used as the Gaussian scratch folder.  For now, leave this in your home directory and keep an eye on its size and clean up old files.
 
 Testing Gaussian
 ----------------
@@ -122,17 +121,17 @@ Testing Gaussian
 
 You can test to make sure ``g09`` is working properly and your environment is set up correctly by setting up a simple ``g09`` test and then writing a schelulings script to submit the job to ``slurm``, the cluster scheduler.  The following is a simple test:
 
-.. literalinclude:: /examples/g09/g09-test.gjf
-
 `Download g09-test.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-test.gjf>`_
+
+.. literalinclude:: /examples/g09/g09-test.gjf
 
 This test file will run a single ``g09`` job using 8 threads and 4Gb of memory.
 
 Next set up a simple ``slurm`` script to schedule your your ``g09`` job.  Set up a simple bash script with some special directives in the header to do this:
 
-.. literalinclude:: /examples/g09/g09-slurm.sh
-
 `Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-slurm.sh>`_
+
+.. literalinclude:: /examples/g09/g09-slurm.sh
 
 To enqueue the job run::
 
@@ -150,8 +149,8 @@ or by visiting the `ganglia monitoring tool <http://gravel.rc.pdx.edu>`_.
 
 For a more extensive test try the following ``g09`` file which will fail on servers without the correct CPU instutions required by gaussian:
 
-.. literalinclude:: /examples/g09/l2-PtCl-td.gjf
-
 `Download l2-PtCl-td.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/l2-PtCl-td.gjf>`_
+
+.. literalinclude:: /examples/g09/l2-PtCl-td.gjf
 
 Try editing or copying the ``g09-slurm.sh`` to point to the ``l2-PtCl-td.gjf`` file and launch a second job on the scheduler.
