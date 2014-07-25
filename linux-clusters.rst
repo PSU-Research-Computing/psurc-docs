@@ -133,8 +133,6 @@ Next set up a simple ``slurm`` script to schedule your your ``g09`` job.  Set up
 
 `Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-slurm.sh>`_
 
-.. note:: This script will run a single ``g09`` job on a dedicated compute node with the above script.  Set the ``g09`` settings accordingly.
-
 To enqueue the job run::
 
   sbatch g09-slurm.sh
@@ -148,3 +146,9 @@ We can keep an eye on activity using::
   sinfo
 
 or by visiting the `ganglia monitoring tool <http://gravel.rc.pdx.edu>`_.
+
+For a more extensive test try the following `g09` file which will fail on servers without the correct CPU instutions required by gaussian:
+
+.. literalinclude:: /examples/g09/l2-PtCl-td.gjf
+
+`Download g09-test.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/l2-PtCl-td.gjf>`_
