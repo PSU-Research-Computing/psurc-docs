@@ -33,3 +33,4 @@ Backend Notes:
 
    editing
    gravel
+   yumrepo
