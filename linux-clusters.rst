@@ -151,4 +151,6 @@ For a more extensive test try the following `g09` file which will fail on server
 
 .. literalinclude:: /examples/g09/l2-PtCl-td.gjf
 
-`Download g09-test.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/l2-PtCl-td.gjf>`_
+`Download l2-PtCl-td.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/l2-PtCl-td.gjf>`_
+
+Try editing or copying the `g09-slurm.sh` to point to the `l2-PtCl-td.gjf` file and launch a second job on the scheduler.
