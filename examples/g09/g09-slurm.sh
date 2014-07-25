@@ -9,7 +9,7 @@
 #SBATCH --nodes 1
 
 # Specify slurm partition
-#SBATCH --partition CLUSTER
+#SBATCH --partition main
 
 # command to run
 g09 g09-test.gjf

@@ -31,12 +31,6 @@ Gravel Cluster
 +----------------------+-------------------------+-------------------------+
 
 
-.... figure:: /img/gravel.JPG
-     :alt: The Gravel Cluster.
-     :scale: 50
-
-     A photo of the Gravel Cluster blade servers.
-
 Hydra Cluster
 -------------
 
@@ -59,11 +53,6 @@ Hydra Cluster
 +----------------------+--------------------------+------------------------------+----------------------+
 | **Hyper Threading**  | Enabled                  |                              |                      |
 +----------------------+--------------------------+------------------------------+----------------------+
-
-.... figure:: /img/hydra.JPG
-    :alt: The Hydra Cluster.
-
-    A photo of the Hydra Cluster servers (highlighted in red).
 
 .. _pgiCluster:
 

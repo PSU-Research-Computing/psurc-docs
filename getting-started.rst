@@ -14,11 +14,11 @@ Check which shell you are running
 `````````````````````````````````
 
 Log into any research server and enter the following command::
-  
+
   echo $0
 
 If you see any kind of output other than something like this::
-  
+
   > echo $0
   -bash
 
@@ -27,13 +27,13 @@ then you are likely running some other shell by default, most likely ``tcsh`` or
 What to do if my default shell is NOT bash?
 ```````````````````````````````````````````
 
-Send us a quick request from your PDX email address requesting that your default research account shell be set to bash.  
+Send us a quick request from your PDX email address requesting that your default research account shell be set to bash.
 
 What to do in the meantime
 ``````````````````````````
 
 You can always switch over to bash by typing the following into the console no matter what your default shell is set to after logging in::
-  
+
   > bash
 
 .. _dotfiles:
@@ -43,7 +43,7 @@ Getting your dotfiles in order
 
 Dotfiles (files that live in your home directory that start with a ``.``) are hidden preference files that allow you to change your shell environment and settings for different unix programs.  You can see these files by passing the ``-a`` flag to the ``ls`` command.
 
-Confused about the differences between ``.bashrc`` and ``.bash_profile``? 
+Confused about the differences between ``.bashrc`` and ``.bash_profile``?
 
 Load ``.bashrc`` from ``.bash_profile``:
 ```````````````````````````````````````
@@ -51,7 +51,7 @@ Load ``.bashrc`` from ``.bash_profile``:
 By loading ``.bashrc`` from ``.bash_profile`` you can simplify your life by (mostly) just having to worry about making settings changes to a single file (``.bashrc``).  Add the following lines to your ``.bash_profile`` file in your home directory.
 
 .. code-block:: sh
-  
+
   # Enable .bashrc
   # If running bash
   if [ -n "$BASH_VERSION" ]; then
@@ -61,7 +61,7 @@ By loading ``.bashrc`` from ``.bash_profile`` you can simplify your life by (mos
       fi
   fi
 
-Now you can edit shell environments in ``.bashrc`` and it always works 
+Now you can edit shell environments in ``.bashrc`` and it always works
 
 Set up GNU ``screen`` for long running processes
 --------------------------------------------
@@ -74,39 +74,39 @@ Configuring Screen
 Before we start, lets add as simple configuration file that vastly improves the screen programs behavior.
 
 Create a file in your home directory called ``.screenrc``::
-  
+
   touch ~/.screenrc
 
 Paste in the following settings using your preferred ``$EDITOR``
 
 .. code-block:: sh
-  
+
   # Source: https://gist.github.com/bcomnes/6689991/download
   # Sets the screen to use login shells
   shell -$SHELL
-   
+
   # To reload .screenr Press Ctrl - a : source ~/.screenrc
-   
+
   # Turn of startup message
   startup_message off
-   
+
   # This helps prevent the screen from doing funny things.
   defflow off
   defnonblock on
-   
+
   # Enable 256-color mode when screen is started with TERM=xterm-256color
   # Taken from: http://frexx.de/xterm-256-notes/
-  # I took it from: http://www.robmeerman.co.uk/unix/256colours 
+  # I took it from: http://www.robmeerman.co.uk/unix/256colours
   #
   # Note that TERM != "xterm-256color" within a screen window. Rather it is
   # "screen" or "screen-bce"
-  # 
+  #
   # terminfo and termcap for nice 256 color terminal
   # allow bold colors - necessary for some reason
   attrcolor b ".I"
   # tell screen how to set colors. AB = background, AF=foreground
   termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-   
+
   # Sets the status bar
   caption string "%?%F%{= Bk}%? %C%A %D %d-%m-%Y %{= kB} %t%= %?%F%{= Bk}%:%{=  wk}%? %n "
   hardstatus alwayslastline
@@ -118,20 +118,20 @@ Using Screen
 ````````````
 
 Here is a quick walkthrough of how to use screen.  To start using ``screen``, run::
-  
+
   > screen
 
 This opens a new ``screen`` session.  Type some commands into the window such as listing files (``ls``) or changing directory (``cd ..``).
 
 Now we can disconnect from this screen and have it continue to run in the background.  ``screen`` uses keyboard shortcuts where you press two keys at once, let go, then press the next key to actually issue the command.  First press the two keys at the same time::
-  
+
   Ctl-a
 
 Let go, then press::
-  
+
   d
 
-This should disconnect you from your screen session and take you back to where you were before you launch ``screen``.  You can have multiple ``screen`` sessions running at the same time (and have even more ``screen`` windows per ``screen`` session if you really want!).  
+This should disconnect you from your screen session and take you back to where you were before you launch ``screen``.  You can have multiple ``screen`` sessions running at the same time (and have even more ``screen`` windows per ``screen`` session if you really want!).
 
 .. note:: In the future, this kind of keyboard shortcut will be referred to as ``Ctl-a d``
 
@@ -140,20 +140,20 @@ Reconnecting to screen
 To reconnect to screen, we can type ``screen -ls`` similar to list the running screen sessions.  (Similar to how ``ls`` will list the files in the current directory).
 
 .. code-block:: sh
-  
+
   > screen -ls
   There is a screen on:
    19250.pts-8.rocks (Detached)
   1 Socket in /var/run/screen/S-bcomnes.
 
 This lists the running screen sessions.  Each session has a number associated with it.  To reconnect to a particular screen session type::
-  
+
   screen -r 19250
 
-where ``19250`` is the number associated with the screen session you want to connect to.  
+where ``19250`` is the number associated with the screen session you want to connect to.
 
 To end a screen session, reconnect to it, and just exit out of all the processes running and then end the session by typing::
-  
+
   exit
 
 There are lots of cool ``screen`` features.  Here is a quick rundown of screen window management:
@@ -171,15 +171,15 @@ Set up SSH keys and config files
 --------------------------------
 You can enable secure, password-free authentication to the ARC servers using SSH keys.  SSH keys are a public/private key system that is more secure than traditional passwords, and offers a more convenient login mechanism than typing in your password every time you connect.
 
-SSH Keys work by generating two cryptographic key files.  One of the files is private (keep it a secret!) and the other is public (it doesn't matter if someone gets a copy of it, but don't unnecessarily distribute it).   
+SSH Keys work by generating two cryptographic key files.  One of the files is private (keep it a secret!) and the other is public (it doesn't matter if someone gets a copy of it, but don't unnecessarily distribute it).
 
 Generating Keypair
 ``````````````````
 On your computer create a ssh RSA keypair by typing::
 
-  $ ssh keygen -t rsa 
+  $ ssh-keygen -t rsa
 
-This creates a pair of keys (public ``id_rsa.pub`` and private ``id_rsa``).  
+This creates a pair of keys (public ``id_rsa.pub`` and private ``id_rsa``).
 
 Should I set a Passphrase for my Private Key?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -241,7 +241,7 @@ Which will connect to ``myname@example.server.tld``
 How to nice your processes
 --------------------------
 
-It is important to ``nice`` intensive processes so that they don't interfere with using the most basic functions of the research server such as changing directories or moving files. 
+It is important to ``nice`` intensive processes so that they don't interfere with using the most basic functions of the research server such as changing directories or moving files.
 
 The ``nice`` and ``renice`` commands adjust the priority of a process.  ARC recommends that all users ``nice`` all of their processes with a value of at least 5.  To nice a process when it is started type::
 
@@ -260,7 +260,7 @@ where ``[PID]`` is the process ID.
 Using ``htop`` to keep an eye on the server
 -------------------------------------------
 
-You can use a program called ``htop`` to keep an eye on the server. 
+You can use a program called ``htop`` to keep an eye on the server.
 
 .. figure:: /img/htop.png
    :alt: A screenshot of the htop program running on hecate.
