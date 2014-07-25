@@ -147,10 +147,10 @@ We can keep an eye on activity using::
 
 or by visiting the `ganglia monitoring tool <http://gravel.rc.pdx.edu>`_.
 
-For a more extensive test try the following `g09` file which will fail on servers without the correct CPU instutions required by gaussian:
+For a more extensive test try the following ``g09`` file which will fail on servers without the correct CPU instutions required by gaussian:
 
 .. literalinclude:: /examples/g09/l2-PtCl-td.gjf
 
 `Download l2-PtCl-td.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/l2-PtCl-td.gjf>`_
 
-Try editing or copying the `g09-slurm.sh` to point to the `l2-PtCl-td.gjf` file and launch a second job on the scheduler.
+Try editing or copying the ``g09-slurm.sh`` to point to the ``l2-PtCl-td.gjf`` file and launch a second job on the scheduler.
