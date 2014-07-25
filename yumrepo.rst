@@ -52,26 +52,23 @@ Procedures
 Add an RPM to the local repository on the head node
 ```````````````````````````````````````````````````
 
-Adapted from `<https://wiki.rocksclusters.org/wiki/index.php/FAQ#Q:_How_can_I_install_new.2Fupdated_RPM_packages_in_all_nodes.3F>`
-.. code-block:: bash
+Adapted from `<https://wiki.rocksclusters.org/wiki/index.php/FAQ#Q:_How_can_I_install_new.2Fupdated_RPM_packages_in_all_nodes.3F>`:: bash
   ssh hydra
 
-You need rootly powers: .. code-block:: bash
+You need rootly powers::
   su
-or .. code-block:: bash
+or::
   sudo -s
 
 Get the RPM somewhere like a home directory, and see whether its
-dependencies are available and it can successfully install, e.g.: .. code-block:: bash
+dependencies are available and it can successfully install, e.g.:: bash
   yum localinstall gsl-1.13-1.el6.x86_64.rpm
   yum localinstall gsl-devel-1.13-1.el6.x86_64.rpm
 
-Put the rpm here, so it can be added to the ROCKS yum repo
-.. code-block:: bash
+Put the rpm here, so it can be added to the ROCKS yum repo:: bash
   cp gsl-1.13-1.el6.x86_64.rpm /state/partition1/rocks/install/contrib/6.1/x86_64/RPMS
 
-Rebuild the distribution to copy the new package to the local repository and update the repository metadata:
-.. code-block: bash
+Rebuild the distribution to copy the new package to the local repository and update the repository metadata:: bash
   cd /export/rocks/install
   rocks create distro
 
