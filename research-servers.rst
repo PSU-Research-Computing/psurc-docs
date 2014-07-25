@@ -99,8 +99,8 @@ You can deactivate all virtualenviroments and revert back to system python by ty
   pyenv deactivate
 
 
-Information on ``perl``
-=======================
+Information on Perl
+===================
 
 To use an updated ``perl`` version we need to use ``perlbrew`` and point it at the ``perlbrew`` install that works system wide.
 
@@ -157,5 +157,5 @@ Message passing has been installed on the research system, but has to be enabled
   module load openmpi-x86_64
   module load mpich2-x86_64
 
-These commands can be added to your ``.bashrc`` if you need them routinely.
+These commands can be added to your ``.bashrc`` if you need them routinely or dynamically loaded from shell scripts that launch your MPI jobs.  You may be interested in running this on the :ref:`cluster`.
 
