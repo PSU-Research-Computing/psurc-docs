@@ -72,7 +72,7 @@ dependencies are available and it can successfully install, e.g.::
 
 Put the rpm here, so it can be added to the ROCKS yum repo::
 
-  cp gsl-1.13-1.el6.x86_64.rpm /state/partition1/rocks/install/contrib/6.1/x86_64/RPMS
+  cp gsl-1.13-1.el6.x86_64.rpm gsl-devel-1.13-1.el6.x86_64.rpm /state/partition1/rocks/install/contrib/6.1/x86_64/RPMS
 
 Rebuild the distribution to copy the new package to the local repository and update the repository metadata::
 
