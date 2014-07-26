@@ -1,5 +1,6 @@
+***********
 How to Edit
-===========
+***********
 
 Arc-docs is a set of documentation that is built and hosted on `ReadTheDocs <http://readthedocs.org>`_.  ReadTheDocs is a service builds the documentation from a ``git`` repository whenever it receives a `webhook`_ event which is fired every time a new commit is made to that repo.  The Arc-Docs repo is hosted on github: https://github.com/PSU-OIT-ARC/arc-docs
 
