@@ -6,7 +6,7 @@
 Welcome to ARC Docs
 ===================
 
-ARC Docs is a collection of documents, notes, instructions and tutorials that help explain the subtler points relating to the resources available to students and faculty provided by `Academic & Research Computing`_ through PSU_\s OIT_.
+ARC Docs is a collection of documents, notes, instructions and tutorials that help explain resources available to students and faculty provided by `Academic & Research Computing`_ through PSU_\s OIT_.
 
 .. note:: Please direct any errors or questions to consultants@pdx.edu or submit a pull request with proposed changes by following the edit button in the upper right hand corner.
 
