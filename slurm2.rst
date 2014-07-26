@@ -113,6 +113,7 @@ sinfo
 sreport
 ```````
 	Lists cluster usage. Examples::
+	
 		$ sreport job sizesbyaccount
 		$ sreport cluster utilization
 		$ sreport user top
