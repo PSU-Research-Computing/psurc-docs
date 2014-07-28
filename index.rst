@@ -34,3 +34,4 @@ Backend Notes:
    editing
    gravel
    yumrepo
+   slurm2
