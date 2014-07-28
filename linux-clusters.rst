@@ -55,7 +55,6 @@ Hydra Cluster
 | **Hyper Threading**  | Enabled                | Enabled                | N/A                  |
 +----------------------+------------------------+------------------------+----------------------+
 
-git add
 .. _pgiCluster:
 
 ROCKS: The Cluster Distribution
