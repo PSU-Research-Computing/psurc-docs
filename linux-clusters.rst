@@ -86,7 +86,7 @@ TODO: How to use the scheduler for MPI style programs.
 
 TODO: How do I run non-mpi style programs on the cluster?
 
-.. youtube:: U42qlYkzP9k
+.. youtube:: https://www.youtube.com/watch?v=U42qlYkzP9k
 
 PGI Cluster Development Kit: Linux Cluster
 ==========================================
