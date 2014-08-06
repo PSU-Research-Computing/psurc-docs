@@ -1,6 +1,10 @@
 .. role:: bash(code)
    :language: bash
 
+****************
+Research Servers
+****************
+
 edit :bash:`/opt/rocks/lib/python2.6/site-packages/rocks/commands/sync/users/plugin_fixnewusers.py`
 
 make it "fix" existing users, not just new ones: in Plugin#run()::
