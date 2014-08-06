@@ -7,13 +7,17 @@ Moving Home Directory Mountpoint on the Cluster Head Node
 
 edit :bash:`/opt/rocks/lib/python2.6/site-packages/rocks/commands/sync/users/plugin_fixnewusers.py`
 
+import :bash:`os.path` at the top, since we're going to use it later::
+
+   import os.path
+
 make it "fix" existing users, not just new ones: in Plugin#run()::
 
   s@default_dir = '/export/home/'@default_dir = '/home/'@
 
 because we are now regenerating :bash:`/etc/auto.home` entries for existing users, make it first delete :bash:`/etc/auto.home` to avoid duplicate entries (autofs appears to use the first entry for a given path, so subsequently appended entries are useless) (add before the line "for user in new_users:")::
 
-  os.remove("/etc/auto.home")
+  if os.path.exists("/etc/auto.home"): os.remove("/etc/auto.home")
   
 now, copy all of the homedirs to the new mountpoint, e.g. :bash:`/newhome`
 
