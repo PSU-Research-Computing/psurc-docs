@@ -35,3 +35,4 @@ Backend Notes:
    gravel
    yumrepo
    slurm2
+   rocks-move-home
