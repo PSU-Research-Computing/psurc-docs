@@ -1,9 +1,9 @@
 .. role:: bash(code)
    :language: bash
 
-****************
-Research Servers
-****************
+*********************************************************
+Moving Home Directory Mountpoint on the Cluster Head Node
+*********************************************************
 
 edit :bash:`/opt/rocks/lib/python2.6/site-packages/rocks/commands/sync/users/plugin_fixnewusers.py`
 
