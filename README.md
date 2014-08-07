@@ -1,7 +1,7 @@
 arc-docs
 ========
 
-.. image:: https://readthedocs.org/projects/arc-docs/badge/?version=latest
+![Docs version](https://readthedocs.org/projects/arc-docs/badge/?version=latest)
 
 ARC Documentation powered by Read The Docs.  Current available at:
 
