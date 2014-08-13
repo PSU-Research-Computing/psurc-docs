@@ -80,9 +80,9 @@ Create a file in your home directory called ``.screenrc``::
 
 Paste in the following settings using your preferred ``$EDITOR``
 
-`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/screen/.screenrc>`_
+`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/screen/screenrc>`_
 
-.. literalinclude:: /examples/screen/.screenrc
+.. literalinclude:: /examples/screen/screenrc
 
 This changes some subtle behavior and turns on a status bar making screen a little bit easier to wrap your head around.  It also turns off the annoying startup message.
 
