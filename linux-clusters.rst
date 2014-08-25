@@ -110,6 +110,10 @@ Useful Slurm Commands
 
 Here are a list of useful slurm commands.
 
+``scancel`` is the tool for canceling your jobs::
+
+  > scancel [jobid]
+
 ``scontrol`` shows information about running jobs::
 
   > scontrol show job [jobid]
@@ -145,10 +149,12 @@ Here are a list of useful slurm commands.
   main2*       up   infinite     17  alloc compgute-1-[0-16]
   main2*       up   infinite      1   idle compute-1-17
 
-``smap`` shows a visual representation of the cluster::
+``smap`` shows a visual representation of the cluster:
 
 .. figure:: /img/smap.png
    :alt: A screenshot of the smap view running on hydra.
+
+
 
 Useful Slurm Links
 ------------------
