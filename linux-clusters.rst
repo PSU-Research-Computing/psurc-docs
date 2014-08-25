@@ -65,7 +65,15 @@ TODO: Write about ROCKS information that will help the user.
 Ganglia
 =======
 
-TODO: Write about the web interface for monitoring the Linux clusters.
+The clusters can be monitored using the Ganglia webview from on campus at the following URLS:
+
+- http://hydra.rc.pdx.edu/
+- http://gravel.rc.pdx.edu/
+
+.. figure:: /img/hydra-ganglia.png
+   :alt: A screenshot of the ganglia view for hydra.
+
+These can be viewed off campus by using PSUs `VPN <http://www.pdx.edu/oit/virtual-private-network-vpn>`_.
 
 Slurm: The Cluster Scheduler
 ============================
