@@ -87,6 +87,7 @@ Example Scheduling Script
 `Download example.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/slurm/example.sh>`_
 
 .. literalinclude:: /examples/slurm/example.sh
+   :language: sh
 
 PGI Cluster Development Kit: Linux Cluster
 ==========================================
