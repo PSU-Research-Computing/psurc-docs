@@ -76,7 +76,7 @@ We are focusing on wprking with individuals on getting their programs up and run
 - http://slurm.schedmd.com/documentation.html
 - http://slurm.schedmd.com/tutorials.html
 - http://slurm.schedmd.com/publications.html
-- `Introduction to slurm tools<https://www.youtube.com/watch?v=U42qlYkzP9k>`_
+- `Introduction to slurm tools <https://www.youtube.com/watch?v=U42qlYkzP9k>`_
 
 .. youtube:: https://www.youtube.com/watch?v=U42qlYkzP9k
 
