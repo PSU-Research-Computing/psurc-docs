@@ -60,7 +60,27 @@ Hydra Cluster
 ROCKS: The Cluster Distribution
 ===============================
 
-TODO: Write about ROCKS information that will help the user.
+Hydra and Gravel both run ROCKS 6.1.1 with the following rolls installed:
+
+- area51
+- base
+- bio
+- ganglia
+- hpc
+- java
+- kernal
+- os
+- perl
+- python
+- slurm
+
+Applications not managed by the slurm roll system are installed to::
+
+  /share/apps
+
+Hydra has a large scratch space that can be used for computations::
+
+  /disk/scratch/[user folder]
 
 Ganglia
 =======
