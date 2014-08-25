@@ -76,17 +76,17 @@ We are focusing on wprking with individuals on getting their programs up and run
 - http://slurm.schedmd.com/documentation.html
 - http://slurm.schedmd.com/tutorials.html
 - http://slurm.schedmd.com/publications.html
-- `Introduction to slurm tools`_
-
-.. _Introduction to slurm tools: https://www.youtube.com/watch?v=U42qlYkzP9k
-
-TODO: Write about slurm.
-
-TODO: How to use the scheduler for MPI style programs.
-
-TODO: How do I run non-mpi style programs on the cluster?
+- `Introduction to slurm tools<https://www.youtube.com/watch?v=U42qlYkzP9k>`_
 
 .. youtube:: https://www.youtube.com/watch?v=U42qlYkzP9k
+
+
+Example Scheduling Script
+-------------------------
+
+`Download example.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/slurm/example.sh>`_
+
+.. literalinclude:: /examples/slurm/example.sh
 
 PGI Cluster Development Kit: Linux Cluster
 ==========================================
