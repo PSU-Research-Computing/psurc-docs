@@ -31,6 +31,11 @@ Gravel Cluster
 | **Hyper Threading**  | Disabled                | Enabled                 |
 +----------------------+-------------------------+-------------------------+
 
+.. figure:: /img/gravel.JPG
+   :alt: The Gravel Cluster.
+   :scale: 50
+
+   A photo of the Gravel Cluster blade servers.
 
 Hydra Cluster
 -------------
@@ -55,7 +60,11 @@ Hydra Cluster
 | **Hyper Threading**  | Enabled                | Enabled                | N/A                  |
 +----------------------+------------------------+------------------------+----------------------+
 
-.. _pgiCluster:
+.. figure:: /img/hydra.JPG
+   :alt: The Hydra Cluster.
+
+   A photo of the Hydra Cluster servers (highlighted in red).
+
 
 ROCKS: The Cluster Distribution
 ===============================
@@ -183,6 +192,8 @@ Useful Slurm Links
 - `Slurm Tutorials <http://slurm.schedmd.com/tutorials.html>`_
 - `Slurm Publications <http://slurm.schedmd.com/publications.html>`_
 - `Slurm At Harvard <https://rc.fas.harvard.edu/resources/running-jobs/>`_
+
+.. _pgiCluster:
 
 PGI Cluster Development Kit: Linux Cluster
 ==========================================
