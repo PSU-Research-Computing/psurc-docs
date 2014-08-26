@@ -33,7 +33,6 @@ Gravel Cluster
 
 .. figure:: /img/gravel.JPG
    :alt: The Gravel Cluster.
-   :scale: 15
 
    A photo of the Gravel Cluster blade servers.
 
