@@ -8,7 +8,7 @@ This page contains information about the research servers and instructions on ho
 Servers and Hardware
 ====================
 
-The following linux clusters are available for PSU students:
+The following Linux clusters are available for PSU students:
 
 Gravel Cluster
 --------------
