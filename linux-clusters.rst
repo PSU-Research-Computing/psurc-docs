@@ -108,8 +108,9 @@ Slurm: The Cluster Scheduler
 
 This section contains information on general slurm use.  If this is your first time running slurm, it is recommended that you read over some of the basics on the official `Slurm Website <http://slurm.schedmd.com/documentation.html>`_ and watch this introductory video: `Introduction to slurm tools video <https://www.youtube.com/watch?v=U42qlYkzP9k>`_
 
-.. youtube:: https://www.youtube.com/watch?v=U42qlYkzP9k
-
+.. figure:: /img/slurm-video.png
+   :alt: A video on launching slurm jobs
+   :target: https://www.youtube.com/watch?v=U42qlYkzP9k
 Example Job Submission
 ----------------------
 
