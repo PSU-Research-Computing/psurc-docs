@@ -24,7 +24,8 @@ The following research servers are available for running serialized jobs:
 +----------------------+------------------------+------------------------+
 | **Cores**            | 16 (8/CPU)             |                        |
 +----------------------+------------------------+------------------------+
-| **Special Hardware** |                        | Nvidia Tesla K20 GPU   |
+| **Special Hardware** |                        | NVIDIA GK110GL         |
+|                      |                        | [Tesla K20m] (rev a1)  |
 +----------------------+------------------------+------------------------+
 | **HyperThreading**   | Enabled                | Enabled                |
 +----------------------+------------------------+------------------------+
