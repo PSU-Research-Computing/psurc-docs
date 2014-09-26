@@ -191,7 +191,7 @@ Now you can connect to the server running::
 
   ssh example
 
-Which will connect to ``myname@example.server.tld``
+Which will connect to ``odinusername@example.com``
 
 
 How to nice your processes
