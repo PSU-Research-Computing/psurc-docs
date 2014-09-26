@@ -178,12 +178,14 @@ Creating an ssh config file will let you create shortcut names to servers you fr
 Create a file in ``~/.ssh/`` called 'config' and add servers with the following format::
 
   host [hostname]
-    hostname [server] user[username]
+    hostname [server] 
+    user [username]
 
 Example::
 
-  host [example]
-    hostname [example.server.tld] user[myname]
+  host example
+    hostname example.com 
+    user odinusername
 
 Now you can connect to the server running::
 
