@@ -173,7 +173,7 @@ The password-free login should now work. Connect by ``$ ssh [user]@[server]``
 Create aliases for servers
 --------------------------
 
-You can create aliases for the servers to more easily connect.
+Creating an ssh config file will let you create shortcut names to servers you frequently ssh into. 
 
 Create a file in ``~/.ssh/`` called 'config' and add servers with the following format::
 
