@@ -23,7 +23,7 @@ Unix Software:
    :glob:
    :maxdepth: 2
 
-   unxi-software/*
+   unix-software/*
 
 Getting Started:
 ----------------
