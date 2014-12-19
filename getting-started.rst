@@ -44,25 +44,7 @@ Getting your dotfiles in order
 
 Dotfiles (files that live in your home directory that start with a ``.``) are hidden preference files that allow you to change your shell environment and settings for different unix programs.  You can see these files by passing the ``-a`` flag to the ``ls`` command.
 
-Confused about the differences between ``.bashrc`` and ``.bash_profile``?
-
-Load ``.bashrc`` from ``.bash_profile``:
-----------------------------------------
-
-By loading ``.bashrc`` from ``.bash_profile`` you can simplify your life by (mostly) just having to worry about making settings changes to a single file (``.bashrc``).  Add the following lines to your ``.bash_profile`` file in your home directory.
-
-.. code-block:: sh
-
-  # Enable .bashrc
-  # If running bash
-  if [ -n "$BASH_VERSION" ]; then
-  # include .bashrc if it exists
-      if [ -f "$HOME/.bashrc" ]; then
-          . "$HOME/.bashrc"
-      fi
-  fi
-
-Now you can edit shell environments in ``.bashrc`` and it always works
+When you want to make changes to your environment that take effect every time you log in just add them to your ``.bash_profile``.  Careful though!  If you screw this file's syntax up you may break your ``$PATH`` making it difficult to edit the file to fix the problem.
 
 Set up GNU ``screen`` for long running processes
 ================================================
@@ -191,23 +173,25 @@ The password-free login should now work. Connect by ``$ ssh [user]@[server]``
 Create aliases for servers
 --------------------------
 
-You can create aliases for the servers to more easily connect.
+Creating an ssh config file will let you create shortcut names to servers you frequently ssh into. 
 
 Create a file in ``~/.ssh/`` called 'config' and add servers with the following format::
 
   host [hostname]
-    hostname [server] user[username]
+    hostname [server] 
+    user [username]
 
 Example::
 
-  host [example]
-    hostname [example.server.tld] user[myname]
+  host example
+    hostname example.com 
+    user odinusername
 
 Now you can connect to the server running::
 
   ssh example
 
-Which will connect to ``myname@example.server.tld``
+Which will connect to ``odinusername@example.com``
 
 
 How to nice your processes
@@ -242,4 +226,84 @@ You can use a program called ``htop`` to keep an eye on the server.
 Setting up programs in your home directory
 ==========================================
 
-TODO: Describe how to compile things from source and install them to your home directory using stow.
+You can use a simple program called GNU ``stow`` to manage built-from-source applications in your  home directory.
+
+First, create a ``stow`` and ``src`` folder in your home directory::
+
+  > cd ~
+  > mkdir stow
+  > mkdir src
+
+Next download the program you wish to build form source to the ``src`` folder::
+
+  > cd ~/src
+  > wget http://example.com/program-1.0.0.tar.gz
+  ...
+  > tar -xvzf program-1.0.0.tar.gz
+  ...
+  > cd program-1.0.0
+
+Create a folder in the ``stow`` folder where you want your program installed::
+
+  > mkdir ~/stow/program-1.0.0
+
+Read about available build options and decide if you need to change any default options::
+
+  > cd ~/src/program-1.0.0
+  > ./configure --help
+  ...
+  #Lots of options
+
+Configure the program to install to the ``stow`` prefix that we just created and set any other options or flags that you need.  This step may vary from program to program.  You may encounter errors or warnings at this step so watch out and research any that come up::
+
+  > cd ~/src/program-1.0.0
+  > ./configure --prefix=~/stow/program-1.0.0
+  ...
+  # Lots of output
+
+
+Next ``make`` the program from source.  Watch for errors on this step and research them as the come up::
+
+  # in ~/src/program-1.0.0
+  > make
+  ...
+  # lots of output
+
+Once your program builds successfully, install it to the ``prefix`` directory that we set in the configure step.  Watch for errors on this step::
+
+  # in ~/src/program-1.0.0
+  > make install
+
+If the install is successful, navigate to the program folder in the ``stow`` folder and inspect what was installed::
+
+  > cd ~/stow/program-1.0.0
+  > ls -a
+  bin  lib
+  # etc...
+
+If you see files/folders not conforming to the standard Unix folder structure::
+
+  /bin
+  /include
+  /lib
+  /lib64
+  /local
+  /sbin
+  /share
+  /tmp
+
+you should consider cleaning up the install as the install did not follow standard convention and may make a huge mess.  If the program installed cleanly, you can ``stow`` the program::
+
+  > cd ~/stow
+  > stow -S program-1.0.0
+
+Running this ``stow`` command with the ``-S`` flag (for save/stow?) symlinks the contents of ``~/stow/program-1.0.0`` into the directory above the ``~/stow`` folder.  In this case this is your home folder ``~/``.  ``bash`` is configured to use the default Unix directories in the home folder by default, so now binaries from ``program-1.0.0`` should be in your ``$PATH``.
+
+Lets say we want to un-``stow`` a program to remove it from our environment or to stow a new version.  We can simply run::
+
+  > cd ~/stow
+  > stow -D program-1.0.0
+
+Running ``stow`` with the ``-D`` flag (for delete?) deletes the symlinks created by stow from the step above.
+
+``stow`` is intelligent enough to not overwrite files and keeps track of everything it installs.  Its simple, but effective.
