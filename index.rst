@@ -21,18 +21,13 @@ Contents:
    :maxdepth: 2
 
    getting-started
-   research-servers
-   linux-clusters
    special-software
+   servers/*
 
-Backend Notes:
---------------
+About arc-docs:
+---------------
 
 .. toctree::
    :maxdepth: 2
 
    editing
-   gravel
-   yumrepo
-   slurm2
-   rocks-move-home
