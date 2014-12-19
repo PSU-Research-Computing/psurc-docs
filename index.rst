@@ -14,8 +14,19 @@ ARC Docs is a collection of documents, notes, instructions and tutorials that he
 .. _PSU: http://www.pdx.edu
 .. _OIT: http://www.pdx.edu/oit/
 
-Contents:
----------
+First time here?  Please see our :ref:`getting-stared` document.
+
+Unix Software:
+--------------
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   unxi-software/*
+
+Getting Started:
+----------------
 
 .. toctree::
    :glob:
