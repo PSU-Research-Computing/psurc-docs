@@ -3,8 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+*******************
 Welcome to ARC Docs
-===================
+*******************
 
 ARC Docs is a collection of documents, notes, instructions and tutorials that help explain resources available to students and faculty provided by `Academic & Research Computing`_ through PSU_\s OIT_.
 
@@ -16,30 +17,17 @@ ARC Docs is a collection of documents, notes, instructions and tutorials that he
 
 First time here?  Please see our :ref:`getting-stared` document.
 
-Unix Software:
---------------
+Content
+=======
 
 .. toctree::
    :glob:
    :maxdepth: 2
 
-   unix-software/*
-
-Getting Started:
-----------------
-
-.. toctree::
-   :glob:
-   :maxdepth: 2
-
-   getting-started
-   special-software
-   servers/*
-
-About arc-docs:
----------------
-
-.. toctree::
-   :maxdepth: 2
-
+   intro
+   getting_started
+   servers
+   unix_software
+   research_software
    editing
+

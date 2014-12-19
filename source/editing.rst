@@ -23,6 +23,7 @@ Useful RST References
 ----------------------
 
 - `reStructuredText Primer <http://sphinx-doc.org/rest.html>`_
+- `sublime-text-unofficial-documentation <http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/metadata.html>`_ privides a nice model layout of RTD documents.
 
 RST Tools
 =========
