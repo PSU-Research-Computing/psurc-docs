@@ -8,6 +8,4 @@ This section contains pages that give information and primers on how to use stan
     :maxdepth: 2
     :glob:
 
-    htop
-    dotfiles
-    screen
+    *
