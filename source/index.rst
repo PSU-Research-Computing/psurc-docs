@@ -21,13 +21,12 @@ Content
 =======
 
 .. toctree::
-   :glob:
    :maxdepth: 2
 
    intro
    getting_started
    servers
-   unix_software
-   research_software
+   unix_software/index
+   research_software/index
    editing
 
