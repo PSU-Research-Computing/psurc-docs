@@ -1,7 +1,8 @@
 .. _dotfiles:
-*************
-Unix Dotfiles
-*************
+
+*********
+.dotfiles
+*********
 
 Dotfiles (files that live in your home directory that start with a ``.``) are hidden preference files that allow you to change your shell environment and settings for different unix programs.  You can see these files by passing the ``-a`` flag to the ``ls`` command.
 

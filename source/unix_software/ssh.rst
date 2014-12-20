@@ -1,5 +1,5 @@
 ***
-SSH
+ssh
 ***
 
 SSH Tutorials

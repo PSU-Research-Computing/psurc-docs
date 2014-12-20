@@ -1,6 +1,6 @@
-**************
-Default Shells
-**************
+****
+bash
+****
 
 You may not be running bash, but you should.  The research servers often set your default shell to ``tcsh``, but you should really be using bash.  This document will describe how to check which shell you are running by default, and what you should do if if its not set to bash.
 

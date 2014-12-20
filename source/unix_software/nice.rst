@@ -1,5 +1,5 @@
 ****
-Nice
+nice
 ****
 
 Information on modifying your process priority using ``nice``.

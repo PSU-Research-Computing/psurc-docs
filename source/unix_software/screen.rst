@@ -1,11 +1,14 @@
-************************************************
+******
+screen
+******
+
 Set up GNU ``screen`` for long running processes
-************************************************
+================================================
 
 ``screen`` is a simple way to start a process on the research servers that you want to keep running even aver you are logged out of the session.
 
 Configuring Screen
-==================
+------------------
 
 Before we start, lets add as simple configuration file that vastly improves the screen programs behavior.
 
@@ -22,7 +25,7 @@ Paste in the following settings using your preferred ``$EDITOR``
 This changes some subtle behavior and turns on a status bar making screen a little bit easier to wrap your head around.  It also turns off the annoying startup message.
 
 Using Screen
-============
+------------
 
 Here is a quick walkthrough of how to use screen.  To start using ``screen``, run::
 
@@ -43,7 +46,7 @@ This should disconnect you from your screen session and take you back to where y
 .. note:: In the future, this kind of keyboard shortcut will be referred to as ``Ctl-a d``
 
 Reconnecting to screen
-======================
+----------------------
 To reconnect to screen, we can type ``screen -ls`` similar to list the running screen sessions.  (Similar to how ``ls`` will list the files in the current directory).
 
 .. code-block:: sh

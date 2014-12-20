@@ -25,7 +25,7 @@ Content
 
    intro
    getting_started
-   servers
+   servers/index
    unix_software/index
    research_software/index
    editing
