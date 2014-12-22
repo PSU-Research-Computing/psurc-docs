@@ -1,4 +1,4 @@
-.. index.rst
+.. _research:
 
 *****************
 Research Software
