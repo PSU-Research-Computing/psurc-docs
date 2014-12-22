@@ -23,8 +23,7 @@ Getting Started
 .. toctree::
    :maxdepth: 2
 
-   intro
-   getting_started
+   servers/index
 
 Servers
 =======
