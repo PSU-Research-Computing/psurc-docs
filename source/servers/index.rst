@@ -12,4 +12,24 @@ Compute Servers
 .. toctree::
     :maxdepth: 2
 
-    compute_servers/index
+    compute/hecate
+    compute/circe
+
+
+Linux Clusters
+==============
+
+.. toctree::
+    :maxdepth: 2
+
+    clusters/hydra
+    clusters/gravel
+
+Login Servers
+=============
+
+.. toctree::
+    :maxdepth: 2
+
+    login/hera
+
