@@ -17,16 +17,36 @@ ARC Docs is a collection of documents, notes, instructions and tutorials that he
 
 First time here?  Please see our :ref:`getting-stared` document.
 
-Content
-=======
+Getting Started
+===============
 
 .. toctree::
    :maxdepth: 2
 
    intro
    getting_started
+
+Servers
+=======
+
+.. toctree::
+   :maxdepth: 2
+
    servers/index
+
+Software
+========
+
+.. toctree::
+   :maxdepth: 2
+
    unix_software/index
    research_software/index
-   editing
 
+arc-docs
+========
+
+.. toctree::
+   :maxdepth: 2
+
+   editing

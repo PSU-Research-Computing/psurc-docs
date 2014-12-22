@@ -42,7 +42,6 @@ Configure the program to install to the ``stow`` prefix that we just created and
   ...
   # Lots of output
 
-
 Next ``make`` the program from source.  Watch for errors on this step and research them as the come up::
 
   # in ~/src/program-1.0.0

@@ -32,3 +32,18 @@ Hydra Specifications
    :alt: The Hydra Cluster.
 
    A photo of the Hydra Cluster servers (highlighted in red).
+
+Applications
+============
+
+Applications not managed by the slurm roll system are installed to::
+
+  /share/apps
+
+
+Storage
+=======
+
+Hydra has a large scratch space that can be used for computations::
+
+  /disk/scratch/[user folder]
