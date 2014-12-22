@@ -1,4 +1,5 @@
 ..  hecate.rst
+
 ******
 Hecate
 ******
