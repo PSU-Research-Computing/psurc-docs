@@ -15,7 +15,7 @@ ARC Docs is a collection of documents, notes, instructions and tutorials that he
 .. _PSU: http://www.pdx.edu
 .. _OIT: http://www.pdx.edu/oit/
 
-First time here?  Please see our :ref:`getting-stared` document.
+.. warning:: First time here?  Please see our :ref:`getting-stared` document.
 
 Getting Started
 ===============
