@@ -36,6 +36,7 @@ SublimeText RST Tools
 - `reStructuredText Improved <https://sublime.wbond.net/packages/RestructuredText%20Improved>`_
 - `Restructured Text (RST) Snippets <https://sublime.wbond.net/packages/Restructured%20Text%20(RST)%20Snippets>`_
 - `Table Editor <https://sublime.wbond.net/packages/Table%20Editor>`_
+- `SublimeLinter-rst <https://github.com/SublimeLinter/SublimeLinter-rst>`_
 
 Online Tools
 ------------
