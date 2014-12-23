@@ -10,19 +10,19 @@ Programs that require large amounts of memory (100's of GB) should be run on ``h
 .. toctree::
     :maxdepth: 2
 
-    compute/hecate
-    compute/circe
+    hecate
+    circe
 
 
 .. toctree::
     :maxdepth: 2
 
-    clusters/hydra
-    clusters/gravel
+    hydra
+    gravel
 
 
 .. toctree::
     :maxdepth: 2
 
-    login/hera
+    hera
 
