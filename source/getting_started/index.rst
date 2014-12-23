@@ -18,3 +18,6 @@ We also provide more comprehensive information on specific software packages in 
     pick_a_server
     connecting
     monitor
+    tuning
+    moving_files
+    be_nice

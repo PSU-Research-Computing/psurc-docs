@@ -1,6 +1,6 @@
-***********************************
-Checking the current load of server
-***********************************
+**********************
+Monitoring Server Load
+**********************
 
 Before you start a new job, it is important to check to see what resources are currently in use. Since these are shared resources, other jobs may currently be using large amounts of RAM or processing threads.::
 
