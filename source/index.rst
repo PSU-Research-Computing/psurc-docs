@@ -31,7 +31,9 @@ Servers
 .. toctree::
    :maxdepth: 2
 
-   servers/index
+   compute_servers/index
+   linux_clusters/index
+   other_servers/index
 
 Software
 ========
