@@ -1,4 +1,4 @@
-.. _gravel:
+.. _gravel_cluster:
 
 **************
 Gravel Cluster

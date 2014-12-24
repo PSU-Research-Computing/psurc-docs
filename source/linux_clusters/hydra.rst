@@ -1,4 +1,4 @@
-.. _hydra:
+.. _hydra_cluster:
 
 
 *************
