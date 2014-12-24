@@ -1,4 +1,5 @@
-.. ganglia.rst
+.. _ganglia.rst:
+
 *******
 Ganglia
 *******

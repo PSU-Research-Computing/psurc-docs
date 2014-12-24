@@ -1,4 +1,5 @@
-..  slurm.rst
+..  _slurm.rst:
+
 ***********************
 Slurm Cluster Scheduler
 ***********************
