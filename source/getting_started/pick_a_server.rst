@@ -33,11 +33,13 @@ Hecate is good for jobs that:
 Hydra Cluster
 =============
 
+``hydra.rc.pdx.edu``
+
 :ref:`hydra` is the primary compute cluster at ARC.  It is available for massivly distributed compute jobs, or just running CPU/IO intensive tasks on single nodes if they are distruptive to other tasks on the general compute servers.  Programs are required to use the :ref:`slurm` scheduler which requires a bit of extra training to get started on.
 
 Hydra is good for jobs that:
 
-- Use message pasing (MPI, MPIC etc)
+- Use message passing (MPI, MPIC etc)
 - Tend to have a high CPU load and distrupt other processes on the general compute serers and require their own dedicated node.
 - Can be broke into many little parts and executed in parallel across multiple nodes.
 - Are easily distrupted by other processes on the general compute servers and require a dedicated node.
@@ -45,6 +47,8 @@ Hydra is good for jobs that:
 
 Gravel Cluster
 ==============
+
+``gravel.rc.pdx.edu``
 
 :ref:`gravel` is the secondary compute cluster at ARC.  It runs slightly older hardware, and generally is less busy than hydra.  Students are free to use gravel if they wish but changes to hydra are tested on gravel first.
 
