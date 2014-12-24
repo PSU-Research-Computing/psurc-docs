@@ -1,4 +1,6 @@
 ..  circe.rst
+.. _circe:
+
 
 *****
 Circe

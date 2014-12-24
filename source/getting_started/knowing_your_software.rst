@@ -9,7 +9,7 @@ Any software you can run on the research servers can be run locally on the compu
 Getting Started with Unfamiliar Software
 =========================================
 
-The best thing you can do to learn how to use new and complicated unix software packages is get it running on your local machine.  Once you understand this, getting it running in a shared computing environment will make a lot more sense.
+The best thing you can do to learn how to use new and complicated Unix software packages is get it running on your local machine.  Once you understand this, getting it running in a shared computing environment will make a lot more sense.
 
 All of ARC's Servers run Linux, a flavor of Unix.  If you can get your software working locally, we can likely get it running on the servers.
 

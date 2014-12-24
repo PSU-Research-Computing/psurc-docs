@@ -3,31 +3,54 @@
 Picking A Server
 ****************
 
-The first step towards efficently utilizing the ARC resources is to get to know the software you wish to run. Please carefully read the documentation provided by the software you wish to run. By knowing your requirements, a proper server can be chosen.
+Once you have an idea of the software you wish to run, and its hardware requirements, you can pick a server to run your compute jobs on.
 
-Once you have an idea about your software requirements, compare those against the servers below to get an idea of where you should run your jobs.
+Circe
+=====
+
+``circe.rc.pdx.edu``
+
+:ref:`circe` is a general compute server for smaller jobs.  All minor computing tasks should take place here.  It also offeres a GPGPU for hardware accelerated computations.
+
+- Good for jobs that require less than 10GB of RAM.
+- Can utilize GPGPU(CUDA) parallellization.
+- No job scheduler.
 
 
 Hecate
 ======
 
-Hecate is the appropriate choice for a job which:
+``hecate.rc.pdx.edu``
 
-- Requires large (over 50 GB) of RAM.
-- Cannot be parallellized on the cluster.
+:ref:`hecate` is the other general purpose compute server for RAM hungry jobs.  Jobs that require over 10 GB of ram should have priority over jobs that are not ram intensive.  If you are running a CPU or IO bound job that does not require lots of RAM, you should move your job to Circe or a node in the clusters.
 
-Circe
-=====
+Hecate is good for jobs that:
 
-Circe is the appropriate choice for a job which:
+- Requires large (over 10 GB) of RAM.
+- No Scheduler
 
-- Requires less than 160 GB of RAM.
-- Can utilize GPGPU(CUDA) parallellization.
 
 Hydra Cluster
 =============
 
-Hydra is the appropriate choice for a job which:
+:ref:`hydra` is the primary compute cluster at ARC.  It is available for massivly distributed compute jobs, or just running CPU/IO intensive tasks on single nodes if they are distruptive to other tasks on the general compute servers.  Programs are required to use the :ref:`slurm` scheduler which requires a bit of extra training to get started on.
 
-- Can be massively parallellized on a cluster.
-- Can utilize mpi or mpich libraries (look for these in software documentation).
+Hydra is good for jobs that:
+
+- Use message pasing (MPI, MPIC etc)
+- Tend to have a high CPU load and distrupt other processes on the general compute serers and require their own dedicated node.
+- Can be broke into many little parts and executed in parallel across multiple nodes.
+- Are easily distrupted by other processes on the general compute servers and require a dedicated node.
+- Have users wishing to run their programs using a Job scheduler.
+
+Gravel Cluster
+==============
+
+:ref:`gravel` is the secondary compute cluster at ARC.  It runs slightly older hardware, and generally is less busy than hydra.  Students are free to use gravel if they wish but changes to hydra are tested on gravel first.
+
+Gravel is good for jobs that:
+
+- Might be disruptive to jobs running on Hydra
+- Wont fit on hydra if hydra is busy
+- Want to try something new without affecting performance of jobs on hydra
+
