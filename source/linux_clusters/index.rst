@@ -1,3 +1,5 @@
+.. _clusters:
+
 *************
 Linux Clusters
 *************
