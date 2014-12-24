@@ -15,12 +15,14 @@ Since these are shared resources, other jobs may currently be using large amount
 
         Eg. `Load average: 8.04 8.10 8.13`
 
-The first number is the 1 minute load, second is 5 minutes, and third is 15 minutes. A load of 8 means that, on average, 8 cores are 100% utilized. With 16 cores, 100% utilization is a load of 16. Anything above this means that processes are waiting for a core to be available. Ideally the load should be kept under 14.
+.. note:: The first number is the 1 minute load, second is 5 minutes, and third is 15 minutes. A load of 8 means that, on average, 8 cores are 100% utilized. With 16 cores, 100% utilization is a load of 16. Anything above this means that processes are waiting for a core to be available. Ideally the load should be kept under 14.
 
 If the load is high, it can cause runs to fail and, if left unchecked, can crash the server.
 
 Compute Clusters
 ================
 
-Visiting on
+Visiting either `hydra.rc.pdx.edu <hydra.rc.pdx.edu>`_ or `gravel.rc.pdx.edu <gravel.rc.pdx.edu>`_ will take you to the :ref:`ganglia` view for either cluster.
+
+You can also monitor the job queue using ``squeue`` and ``smap`` on either head node.  Read about :ref:`slurm` for more inforamtion on this.
 
