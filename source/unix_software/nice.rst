@@ -11,14 +11,14 @@ It is important to ``nice`` intensive processes so that they don't interfere wit
 
 The ``nice`` and ``renice`` commands adjust the priority of a process.  ARC recommends that all users ``nice`` all of their processes with a value of at least 5.  To nice a process when it is started type::
 
-  $ nice +5 [other_commands]
+    $ nice +5 [other_commands]
 
 where ``[other_commands]`` is the command you actually wan to run.  If you have already started a job and want to nice it after the fact, you can use the ``renice`` command to do this.  First identify the process ID that you wish to nice::
 
-  $ ps -u
+    $ ps -u
 
 Then run ``renice`` on it::
 
-  $ renice +5 [PID]
+    $ renice +5 [PID]
 
 where ``[PID]`` is the process ID.
