@@ -9,11 +9,13 @@ Any software you can run on the research servers can be run locally on the compu
 Getting Started with Unfamiliar Software
 =========================================
 
-The best thing you can do to learn how to use new and complicated Unix software packages is get it running on your local machine.  Once you understand this, getting it running in a shared computing environment will make a lot more sense.
+The best thing you can do to learn how to use new and complicated Unix software packages is get it running on your local machine.  Once you have that experience, getting it running in a shared computing environment will make a lot more sense.
 
-All of ARC's Servers run Linux, a flavor of Unix.  If you can get your software working locally, we can likely get it running on the servers.
+All of ARC's Servers run CentOS Linux, a flavor of Unix.  If you can get your software working locally, we can likely get it running on the servers.
 
 Some software specific support can be provided by ARC students and employees if time is available.
+
+Since all software is different the best we can offer on this are tool suggestions to help with local testing.
 
 Setting up a testing environment locally
 ========================================
@@ -46,23 +48,3 @@ Installing your software locally
 ================================
 
 This step depends on the software you are using.  If you are building software from source, consider using a tool such as :ref:`stow` to manage these manual builds.
-
-Requesting software
-===================
-
-Once you have tested your software and you think your package should be installed system wide you can email consultants@pdx with all relevant details to the installation of your software.  That includes
-
-- Program Name
-- Program Version
-- Program website
-- Link to download
-- Dependencies
-- Compilation Options
-- Anything else needed to get the package up and running
-
-.. _`Xcode`: https://developer.apple.com/xcode/
-.. _`homebrew`: http://brew.sh/
-.. _`home-brew science`: https://github.com/Homebrew/homebrew-science
-.. _`Cygwin`: https://www.cygwin.com/
-.. _`vagrant`: https://www.vagrantup.com/
-.. _`virtualbox`: https://www.virtualbox.org/

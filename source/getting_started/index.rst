@@ -10,7 +10,7 @@ Brand new to research computing, high performance computing and/or Unix?  The fo
 
 Don't be afraid to try things on your own and reserch your questions before asking for help.  Attempting to answer your own questions before reaching out for help will not only likely solve your problems faster, it will help you ask better questions if you do end up getting stuck.
 
-Please work through short tutorial if you are new, or pick the tutorials that you need a refresher on.
+Please work through these short tutorials if you are new, or pick the tutorials that you need a refresher on.
 
 We also provide more comprehensive information on specific software packages in the :ref:`unix` and :ref:`research` sections.
 
