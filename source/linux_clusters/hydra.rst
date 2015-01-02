@@ -50,3 +50,8 @@ Storage
 Hydra has a large scratch space that can be used for computations::
 
   /disk/scratch/[user folder]
+
+We have two JBODs attatched:
+
+- Dell PowerVault MD1220
+- Dell PowerVault MD1200
