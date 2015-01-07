@@ -57,3 +57,18 @@ For a more extensive test try the following ``g09`` file which will fail on serv
 .. literalinclude:: /examples/g09/l2-PtCl-td.gjf
 
 Try editing or copying the ``g09-slurm.sh`` to point to the ``l2-PtCl-td.gjf`` file and launch a second job on the scheduler.
+
+Parallelization With Linda
+==========================
+
+Gaussian ``g09`` jobs can be run in parallel across multiple nodes which may increase performance and decrease runtime of jobs if done correctly.  Documentation is spotty, but here is a sample to help you started.  More information can be found in the :ref:`dynamic hostfile` example.
+
+`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/linda.sh>`_
+
+.. literalinclude:: /examples/g09/linda.sh
+
+A few more notes from the developers:
+
+- "%NProcs=" (short for "%NProcShared") in the input file requests the number of cores (processors) to use via shared-memory parallelization (number per Linda worker)
+- It is also possible to pass the number as an environment variable e.g. "GAUSS_PDEF=16" for 16 shared-memory cores.
+- "%NProcShared=" in the input takes precedence over "GAUSS_PDEF", so one could override the latter by setting "%NProcShared" in the input file.
