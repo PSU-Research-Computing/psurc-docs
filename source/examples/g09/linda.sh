@@ -13,6 +13,7 @@
 # Specify slurm partition
 #SBATCH --partition main
 
+# activate bash debugging from here
 set -x
 
 # Name of your gjf file ie l2-PtCl-td.gjf
