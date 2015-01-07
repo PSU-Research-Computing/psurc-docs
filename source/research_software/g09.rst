@@ -4,6 +4,8 @@
 Gaussian ``g09``
 ****************
 
+.. contents:: Topics
+
 The Gaussian software is installed on linux clusters and is available for use if you are authorized to use the available license.  You must be added to the ``gaussian`` unix group in order to run ``g09`` which should be specifically requested when requesting a research account.
 
 Setting up ``g09``
