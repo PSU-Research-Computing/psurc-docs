@@ -15,7 +15,7 @@ Example Job Submission
 
 To submit a job to the scheduler, first figure out what kind of resource allocation you need.  Once you have that set up a launching script similar to the following:
 
-`Download example.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/slurm/example.sh>`_
+`Download example.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/slurm/example.sh>`_
 
 .. literalinclude:: /examples/slurm/example.sh
    :language: sh
