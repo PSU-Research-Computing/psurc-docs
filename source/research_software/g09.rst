@@ -26,7 +26,7 @@ Testing Gaussian
 
 You can test to make sure ``g09`` is working properly and your environment is set up correctly by setting up a simple ``g09`` test and then writing a schelulings script to submit the job to ``slurm``, the cluster scheduler.  The following is a simple test:
 
-`Download g09-test.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-test.gjf>`_
+`Download g09-test.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/g09/g09-test.gjf>`_
 
 .. literalinclude:: /examples/g09/g09-test.gjf
 
@@ -34,7 +34,7 @@ This test file will run a single ``g09`` job using 8 threads and 4Gb of memory.
 
 Next set up a simple ``slurm`` script to schedule your your ``g09`` job.  Set up a simple bash script with some special directives in the header to do this:
 
-`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/g09-slurm.sh>`_
+`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/g09/g09-slurm.sh>`_
 
 .. literalinclude:: /examples/g09/g09-slurm.sh
 
@@ -54,7 +54,7 @@ or by visiting the `ganglia monitoring tool <http://gravel.rc.pdx.edu>`_.
 
 For a more extensive test try the following ``g09`` file which will fail on servers without the correct CPU instutions required by gaussian:
 
-`Download l2-PtCl-td.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/l2-PtCl-td.gjf>`_
+`Download l2-PtCl-td.gjf <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/g09/l2-PtCl-td.gjf>`_
 
 .. literalinclude:: /examples/g09/l2-PtCl-td.gjf
 
@@ -71,7 +71,7 @@ A few more notes from the developers:
 - It is also possible to pass the number as an environment variable e.g. "GAUSS_PDEF=16" for 16 shared-memory cores.
 - "%NProcShared=" in the input takes precedence over "GAUSS_PDEF", so one could override the latter by setting "%NProcShared" in the input file.
 
-`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/g09/linda.sh>`_
+`Download g09-slurm.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/g09/linda.sh>`_
 
 .. literalinclude:: /examples/g09/linda.sh
 
