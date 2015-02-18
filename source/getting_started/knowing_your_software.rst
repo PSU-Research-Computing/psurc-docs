@@ -2,20 +2,21 @@
 Knowing your software
 *********************
 
-Software is a tool.  The first step to using a tool effectively is understanding how it works.
-
-Any software you can run on the research servers can be run locally on the computer in front of you.
-
-Getting Started with Unfamiliar Software
-=========================================
-
 The best thing you can do to learn how to use new and complicated Unix software packages is get it running on your local machine.  Once you have that experience, getting it running in a shared computing environment will make a lot more sense.
 
-All of ARC's Servers run CentOS Linux, a flavor of Unix.  If you can get your software working locally, we can likely get it running on the servers.
+All of ARC's Servers run CentOS Linux, a flavor of Unix.
 
 Some software specific support can be provided by ARC students and employees if time is available.
 
 Since all software is different the best we can offer on this are tool suggestions to help with local testing.
+
+Here is a good strategy to learn unfamiliar software:
+
+1. Install it locally on your desktop or in a virtual machine
+
+2. Install it to you home directy, or use the the system wide install of the program on the computation servers and see if it works the way you would exepct.
+
+3. Install your program to your home directory on cluster and try launching it through the scheduler on a compute node.
 
 Setting up a testing environment locally
 ========================================
@@ -44,10 +45,10 @@ This option is available to all operating systems.  Using a tool like `vagrant`_
 
 - `CentOS 6.5 Vagrant Manifest <https://atlas.hashicorp.com/chef/boxes/centos-6.5>`_
 
-Installing your software locally
-================================
+Installing to your home directory
+=================================
 
-This step depends on the software you are using.  If you are building software from source, consider using a tool such as :ref:`stow` to manage these manual builds.
+Once your software is installed and working locally, the next step is to install it to your home directory on the computational servers (if its not already installed system wide).  You can use :ref:`stow` to manage these manual builds in your home directory.
 
 .. _Xcode: https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 .. _homebrew: http://brew.sh/
