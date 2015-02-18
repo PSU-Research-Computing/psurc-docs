@@ -30,7 +30,7 @@ If you run Linux locally, usually you can simply install the dev tools and start
 Testing on OS X
 ---------------
 
-OS X has the benefit of running a flavor of Unix and offers a package manager that has a large catalog of research software.  Install `Xcode`_ using the App Store and set up `homebrew`_ and the `home-brew science`_ tap.
+OS X has the benefit of running a flavor of Unix and offers a package manager that has a large catalog of research software.  Install `Xcode`_ using the App Store and set up `homebrew`_ and the `homebrew-science`_ tap.
 
 Testing on Windows
 ------------------
@@ -48,3 +48,10 @@ Installing your software locally
 ================================
 
 This step depends on the software you are using.  If you are building software from source, consider using a tool such as :ref:`stow` to manage these manual builds.
+
+.. _Xcode: https://itunes.apple.com/us/app/xcode/id497799835?mt=12
+.. _homebrew: http://brew.sh/
+.. _homebrew-science: https://github.com/Homebrew/homebrew-science
+.. _Cygwin: https://www.cygwin.com/
+.. _vagrant: https://www.vagrantup.com/
+.. _virtualbox: https://www.virtualbox.org/
