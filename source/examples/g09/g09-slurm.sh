@@ -10,7 +10,9 @@
 # job through benchmarking. You can also request exclusive mode with the --exlusive
 # flag.
 
-#SBATCH --nodes 1 -n 8
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
 
 # Specify slurm partition
 #SBATCH --partition main

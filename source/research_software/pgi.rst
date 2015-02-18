@@ -3,6 +3,8 @@
 PGI Cluster Development Kit
 ***************************
 
+.. contents:: Topics
+
 .. _pgiCluster:
 
 .. TODO: Instructions on how to run PGI on the linux clusters!  Yay!
