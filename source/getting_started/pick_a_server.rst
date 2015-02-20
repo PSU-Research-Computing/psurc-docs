@@ -16,6 +16,10 @@ Circe
 - Can utilize GPGPU(CUDA) parallellization.
 - No job scheduler.
 
+.. seealso::
+
+    Read more about how the :ref:`tesla` card can help speed up your computations.
+
 
 Hecate
 ======
