@@ -28,7 +28,7 @@ Circe
 | **HyperThreading**   | Enabled                |
 +----------------------+------------------------+
 
-.. _gpgpu:
+.. _tesla:
 
 Nvidia Tesla K20 GPGPU
 ======================

@@ -8,7 +8,7 @@ Gaussian ``g09``
 
 .. seealso::
 
-    Gaussian Supports GPGPUs!  Read about our :ref:`gpgpu` card.
+    Gaussian Supports GPGPUs!  Read about our :ref:`tesla` card.
 
 The Gaussian software is installed on linux clusters and is available for use if you are authorized to use the available license.  You must be added to the ``gaussian`` unix group in order to run ``g09`` which should be specifically requested when requesting a research account.
 
