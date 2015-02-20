@@ -20,7 +20,7 @@ Paste in the following settings using your preferred ``$EDITOR``
 
 .. literalinclude:: /examples/screen/screenrc
 
-`Download screenrc <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/examples/screen/screenrc>`_
+`Download screenrc <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/screen/screenrc>`_
 
 This changes some subtle behavior and turns on a status bar making screen a little bit easier to wrap your head around.  It also turns off the annoying startup message.
 
