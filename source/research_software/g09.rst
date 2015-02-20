@@ -9,6 +9,7 @@ Gaussian ``g09``
 .. seealso::
 
     Gaussian Supports GPGPUs!  Read about our :ref:`tesla` card.
+    Gaussian Supports Parallelization!  Read the example: :ref:`linda`
 
 The Gaussian software is installed on linux clusters and is available for use if you are authorized to use the available license.  You must be added to the ``gaussian`` unix group in order to run ``g09`` which should be specifically requested when requesting a research account.
 
@@ -63,6 +64,9 @@ For a more extensive test try the following ``g09`` file which will fail on serv
 .. literalinclude:: /examples/g09/l2-PtCl-td.gjf
 
 Try editing or copying the ``g09-slurm.sh`` to point to the ``l2-PtCl-td.gjf`` file and launch a second job on the scheduler.
+
+
+.. _linda:
 
 Parallelization With Linda
 ==========================
