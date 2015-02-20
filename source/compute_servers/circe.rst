@@ -27,3 +27,18 @@ Circe
 +----------------------+------------------------+
 | **HyperThreading**   | Enabled                |
 +----------------------+------------------------+
+
+
+Nvidia Tesla K20 GPGPU
+======================
+
+Circe is equipped with a `Tesla K20`_ `GPGPU`_.  A GPGPU, when utilized properly, can drastially improve the performance of certain types of computing jobs by incresasing computational concurrency.
+
+Nvidia has a list of software that can take advantage of their GPGPUs:
+
+- `GPGPU Software List`_
+
+
+.. _GPGPU: https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units
+.. _Tesla K20: http://www.nvidia.com/content/PDF/kepler/Tesla-K20-Passive-BD-06455-001-v07.pdf
+.. _GPGPU Software List: http://www.nvidia.com/object/gpu-applications.html?All
