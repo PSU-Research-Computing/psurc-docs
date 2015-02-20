@@ -37,19 +37,14 @@ Circe is equipped with a `Tesla K20`_ `GPGPU`_.  A GPGPU, when utilized properly
 
 Nvidia has a list of software that can take advantage of their GPGPUs:
 
-- `Software List`_
+- `Nvidia Software List <http://www.nvidia.com/object/gpu-applications.html?All>`_
 
 Software that can use the GPGPU:
 
-- `WRF`_
-- `Gaussian G09`_ (Info Coming Soon)
-- `G-BLASTN`_
-- `GPU-BLAST`_
+- `WRF <http://www2.mmm.ucar.edu/wrf/WG2/GPU/>`_
+- `Gaussian G09 <#>`_ (Info Coming Soon)
+- `G-BLASTN <http://www.comp.hkbu.edu.hk/~chxw/software/G-BLASTN.html>`_
+- `GPU-BLAST <http://archimedes.cheme.cmu.edu/?q=gpublast>`_
 
 .. _GPGPU: https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units
 .. _Tesla K20: http://www.nvidia.com/content/PDF/kepler/Tesla-K20-Passive-BD-06455-001-v07.pdf
-.. _Software List: http://www.nvidia.com/object/gpu-applications.html?All
-.. _WRF: http://www2.mmm.ucar.edu/wrf/WG2/GPU/
-.. _Gaussian G09:
-.. _G-BLASTN: http://www.comp.hkbu.edu.hk/~chxw/software/G-BLASTN.html
-.. _GPU-BLAST: http://archimedes.cheme.cmu.edu/?q=gpublast
