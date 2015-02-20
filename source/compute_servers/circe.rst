@@ -28,6 +28,7 @@ Circe
 | **HyperThreading**   | Enabled                |
 +----------------------+------------------------+
 
+.. _gpgpu:
 
 Nvidia Tesla K20 GPGPU
 ======================
@@ -38,7 +39,17 @@ Nvidia has a list of software that can take advantage of their GPGPUs:
 
 - `GPGPU Software List`_
 
+Software that can use the GPGPU:
+
+- `WRF`_
+- `Gaussian G09`_ (Info Coming Soon)
+- `G-BLASTN`_
+- `GPGPU-BLAST`_
 
 .. _GPGPU: https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units
 .. _Tesla K20: http://www.nvidia.com/content/PDF/kepler/Tesla-K20-Passive-BD-06455-001-v07.pdf
 .. _GPGPU Software List: http://www.nvidia.com/object/gpu-applications.html?All
+.. _WRF: http://www2.mmm.ucar.edu/wrf/WG2/GPU/
+.. _Gaussian G09:
+.. _G-BLASTN: http://www.comp.hkbu.edu.hk/~chxw/software/G-BLASTN.html
+.. _GPU-BLAST: http://archimedes.cheme.cmu.edu/?q=gpublast
