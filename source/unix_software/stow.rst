@@ -22,7 +22,7 @@ Next download the program you wish to build form source to the ``src`` folder::
   > cd ~/src
   > wget http://example.com/program-1.0.0.tar.gz
   ...
-  > tar -xvzf program-1.0.0.tar.gz
+  > tar xvzf program-1.0.0.tar.gz
   ...
   > cd program-1.0.0
 
