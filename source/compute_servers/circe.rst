@@ -42,7 +42,7 @@ Nvidia has a list of software that can take advantage of their GPGPUs:
 Software that can use the GPGPU:
 
 - `WRF <http://www2.mmm.ucar.edu/wrf/WG2/GPU/>`_
-- `Gaussian G09 <#>`_ (Info Coming Soon)
+- `Gaussian G09 <http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=roberto+gomperts&searchItems=&sessionTopic=&sessionEvent=&sessionYear=&sessionFormat=&submit=&select=+>`_
 - `G-BLASTN <http://www.comp.hkbu.edu.hk/~chxw/software/G-BLASTN.html>`_
 - `GPU-BLAST <http://archimedes.cheme.cmu.edu/?q=gpublast>`_
 
