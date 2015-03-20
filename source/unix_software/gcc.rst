@@ -8,9 +8,9 @@ GCC 4.8
 
 Setting up GCC 4.8.4 on your system:
 ------------------------------------
-To get GCC 4.8.4 to run on your system all you have to do is add it to your ``PATH`` variable.
-
 \*\*NOTE: GCC 4.8.4 is only installed on Circe and Hecate 
+
+To get GCC 4.8.4 to run on your system all you have to do is add it to your ``PATH`` variable.
 
 To do this add the line below to either your ``~/.bash_profile`` or ``~/.bashrc``:
 
