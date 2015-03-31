@@ -50,6 +50,7 @@ Storage
 Hydra has a large scratch space that can be used for computations::
 
   /disk/scratch/[user folder]
+  /disk/scratch2/[user folder]
 
 We have two JBODs attatched:
 
