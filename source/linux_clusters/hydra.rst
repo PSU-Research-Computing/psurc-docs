@@ -54,5 +54,5 @@ Hydra has a large scratch space that can be used for computations::
 
 We have two JBODs attatched:
 
-- Dell PowerVault MD1220
-- Dell PowerVault MD1200
+- Dell PowerVault MD1220 (scratch)
+- Dell PowerVault MD1200 (scratch2)
