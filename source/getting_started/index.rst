@@ -26,3 +26,4 @@ We also provide more comprehensive information on specific software packages in 
     tuning
     moving_files
     be_nice
+    more_resources
