@@ -4,9 +4,10 @@ More Resources
 
 Here are some links to more resources on learning technical computing and unix/linux skills:
 
-http://software-carpentry.org/lessons.html
-https://github.com/cyberwizardinstitute/
-https://www.youtube.com/channel/UCzDHOdHNitu70iiva25rV7w
+
+- `Software Carpentry`_
+- `Cyberwizard Institute`_
+- `Cyberwizard Lectures`_
 
 .. _`Software Carpentry`: http://software-carpentry.org/lessons.html
 .. _`Cyberwizard Institute`: https://github.com/cyberwizardinstitute/
