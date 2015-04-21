@@ -10,5 +10,5 @@ Here are some links to more resources on learning technical computing and unix/l
 - `Cyberwizard Lectures`_
 
 .. _`Software Carpentry`: http://software-carpentry.org/lessons.html
-.. _`Cyberwizard Institute`: https://github.com/cyberwizardinstitute/
+.. _`Cyberwizard Institute`: https://github.com/cyberwizardinstitute/workshops
 .. _`Cyberwizard Lectures`: https://www.youtube.com/channel/UCzDHOdHNitu70iiva25rV7w
