@@ -16,7 +16,7 @@ The path to boost 1.58.0 is:
     /vol/apps/system/boost-1.58.0
 
 Example:
-.. code-block::
+::
 
     $> g++ -I /vol/apps/system/boost-1.58.0 example.cpp -o executable_example
 
