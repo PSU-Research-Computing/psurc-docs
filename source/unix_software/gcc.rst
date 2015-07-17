@@ -16,7 +16,7 @@ To do this add the line below to either your ``~/.bash_profile`` or ``~/.bashrc`
 
 .. code-block:: sh
 
-    export GCC=/vol/apps/system/stow/gcc-4.8.2/
+    export GCC=/vol/apps/system/stow/gcc-4.8.4/
     export PATH=$GCC/bin:$PATH
 
 To check if you are running the right version of GCC run this command:
