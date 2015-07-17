@@ -11,7 +11,7 @@ Using Boost 1.58.0 on your system:
 To compile code that uses boost libraries use the -I flag to set the path to boost.
 The path to boost 1.58.0 is:
 
-.. code-block::
+.. code-block:: sh
 
     /vol/apps/system/boost-1.58.0
 
