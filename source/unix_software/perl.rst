@@ -8,7 +8,7 @@ To use an updated ``perl`` version we need to use ``perlbrew`` and point it at t
 
 Make sure you are running bash as your default shell the add the following two lines to the end of your ``.bashrc`` file::
 
-  export PERLBREW_ROOT=/vol/apps/system/perl5/
+  export PERLBREW_ROOT=/vol/apps/system/perl/
   source $PERLBREW_ROOT/etc/bashrc
 
 Run this command to see which versions of perl are available::
