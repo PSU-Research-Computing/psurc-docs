@@ -49,18 +49,25 @@ We are now using the updated version of python provided by ``pyenv``
 Create a virtual environment in your home directory
 ===================================================
 
-By creating a virtual environment in your home directory, you are setting up your very own python enviornment based on the version of python you selected in the previous steps.  This will enable you to install python packages with ``pip`` freely without having to request an admin to install them for you. ::
+By creating a virtual environment in your home directory, you are setting up your very own python environment based on the version of python you selected in the previous steps.  This will enable you to install python packages with ``pip`` freely without having to request an admin to install them for you. ::
 
-  > virtualenv ~/python2
-  > source ~/python2/bin/activate
+  > mkdir my_environment
+  > virtualenv ~/my_environment
+  > source ~/my_environment/bin/activate
 
 Upon first activation, its a good idea to update pip and setuptools::
 
   pip install --upgrade pip
   pip install --upgrade setuptools
 
-After the initial creation and updating, all you have to do is activate your virtualenv when you want to use it, and you can install packages with pip into your home directory.
+After you have created and updated your new virtual environment your environment is activated and you can install packages with ``pip`` freely.
 
-You can deactivate all virtualenviroments and revert back to system python by typing::
+To exit your python environment type: ::
 
-  pyenv deactivate
+  deactivate
+
+To reactivate an environment you have already created type: ::
+
+    source my_environment/bin/activate
+
+Now you can freely install packages with ``pip`` once again!!
