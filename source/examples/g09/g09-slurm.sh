@@ -18,4 +18,4 @@
 #SBATCH --partition main
 
 # command to run
-g09 g09-test.gjf
+srun g09 g09-test.gjf
