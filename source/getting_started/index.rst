@@ -6,14 +6,21 @@
 Getting Started
 ***************
 
-Brand new to research computing, high performance computing and/or Unix?  The following articles are aimed to help get you up and running fast!
+Server Resources:
+=================
 
-Don't be afraid to try things on your own and reserch your questions before asking for help.  Attempting to answer your own questions before reaching out for help will not only likely solve your problems faster, it will help you ask better questions if you do end up getting stuck.
+There are two kinds of computing services for running jobs that ARC provides, Compute Servers and Clusters.
 
-Please work through these short tutorials if you are new, or pick the tutorials that you need a refresher on.
+Compute Servers:
+----------------
+When you make a research account you will have access to our compute servers Circe and Hecate by default. These servers are just large linux computers that allow multiple users to run jobs at once. Once you are connected to one of the compute servers, you can run jobs in the command line like you would on a normal linux computer, just be mindful of other users.
 
-We also provide more comprehensive information on specific software packages in the :ref:`unix` and :ref:`research` sections.
+Compute Clusters:
+-----------------
+A compute cluster is a set of networked computers that act as one. Compute clusters provide much more power than the compute servers Circe and Hecate. We have two clusters here at ARC, Hydra and Gravel. If you want access to the compute clusters you will have to request access in addition to your regular research account.
 
+Additional information about our servers:
+-----------------------------------------
 .. toctree::
     :maxdepth: 2
     :glob:
@@ -21,8 +28,37 @@ We also provide more comprehensive information on specific software packages in 
 
     knowing_your_software
     pick_a_server
+
+
+Connecting to Our servers:
+==========================
+Use ssh to connect to our servers. ssh is included on Mac and Linux and can used via the command line. If you are on Windows you will need aditional software, most commonly PuTTY, to access our servers over ssh.
+
+Connecting off campus:
+----------------------
+If you are off the campus network you will have to use PSU's vpn client OR ssh onto hera.rc.pdx.edu and then ssh onto the server you want to access from there.
+
+Additional information about connecting:
+----------------------------------------
+.. toctree::
+    :maxdepth: 2
+    :glob:
+
+
     connecting
-    monitor
+ 
+
+Scratch Drives:
+===============
+Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fast storage devices that you can use to store the datayou want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
+
+Other tutorials on getting started:
+===================================
+.. toctree::
+    :maxdepth: 2
+    :glob:
+
+
     tuning
     moving_files
     be_nice
