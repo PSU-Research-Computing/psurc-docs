@@ -48,9 +48,22 @@ Additional Information About Connecting:
     connecting
  
 
+Storage:
+========
+There are several options for storage on our systems.
+
+Home Directories:
+-----------------
+Your home directory (``~``) is your own personal default storage space. When you connect to a server via ``ssh`` you are in your home directory. Home directory space is **very limited**. Do not store large files here; only configuration files, documents, and locally built programs. The compute servers share home directories.
+
 Scratch Drives:
-===============
+---------------
 Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fast storage devices that you can use to store the data you want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
+
+Research Shares (I-Drive):
+--------------------------
+Research Shares are shared folders that you need to request access to. To request access to a share **OR** request a separate research share for you project please go to: `I Drive request form <http://intranet.pdx.edu/oit/i-drive-request>'_
+
 
 Other Tutorials on Getting Started:
 ===================================
