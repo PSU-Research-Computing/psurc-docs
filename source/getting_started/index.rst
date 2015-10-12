@@ -60,10 +60,24 @@ Scratch Drives:
 ---------------
 Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fast storage devices that you can use to store the data you want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
 
+Scratch drive locations: 
+
+Compute Servers (Circe/Hecate): 
+
+  1. ``/disk/scratch``
+
+Hydra (compute cluster):
+
+  1. ``/scratch`` 
+  2. ``/scratch2``
+
+.. note:: Scratch Space is not shared between the servers. e.g: scratch on Hecate is separate from scratch on Circe
+
 Research Shares (I-Drive):
 --------------------------
 Research Shares are shared folders that you need to request access to. To request access to a share **OR** request a separate research share for you project please go to: http://intranet.pdx.edu/oit/i-drive-request
 
+Research shares can be found in: ``/vol/share`` on all systems (excluding gravel)
 
 Other Tutorials on Getting Started:
 ===================================
