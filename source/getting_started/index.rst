@@ -62,7 +62,7 @@ Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fas
 
 Research Shares (I-Drive):
 --------------------------
-Research Shares are shared folders that you need to request access to. To request access to a share **OR** request a separate research share for you project please go to: `I Drive request form <http://intranet.pdx.edu/oit/i-drive-request>'_
+Research Shares are shared folders that you need to request access to. To request access to a share **OR** request a separate research share for you project please go to: http://intranet.pdx.edu/oit/i-drive-request
 
 
 Other Tutorials on Getting Started:
