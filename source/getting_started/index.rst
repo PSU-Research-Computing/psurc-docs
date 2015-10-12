@@ -19,7 +19,7 @@ Compute Clusters:
 -----------------
 A compute cluster is a set of networked computers that act as one. Compute clusters provide much more power than the compute servers Circe and Hecate. We have two clusters here at ARC, Hydra and Gravel. If you want access to the compute clusters you will have to request access in addition to your regular research account.
 
-Additional information about our servers:
+Additional Information About Our Servers:
 -----------------------------------------
 .. toctree::
     :maxdepth: 2
@@ -30,15 +30,15 @@ Additional information about our servers:
     pick_a_server
 
 
-Connecting to Our servers:
+Connecting to Our Servers:
 ==========================
-Use ssh to connect to our servers. ssh is included on Mac and Linux and can used via the command line. If you are on Windows you will need aditional software, most commonly PuTTY, to access our servers over ssh.
+Use ssh to connect to our servers. ssh is included on Mac and Linux and can used via the command line. If you are on Windows you will need additional software, most commonly PuTTY, to access our servers over ssh.
 
-Connecting off campus:
+Connecting Off Campus:
 ----------------------
 If you are off the campus network you will have to use PSU's vpn client OR ssh onto hera.rc.pdx.edu and then ssh onto the server you want to access from there.
 
-Additional information about connecting:
+Additional Information About Connecting:
 ----------------------------------------
 .. toctree::
     :maxdepth: 2
@@ -50,9 +50,9 @@ Additional information about connecting:
 
 Scratch Drives:
 ===============
-Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fast storage devices that you can use to store the datayou want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
+Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fast storage devices that you can use to store the data you want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
 
-Other tutorials on getting started:
+Other Tutorials on Getting Started:
 ===================================
 .. toctree::
     :maxdepth: 2
