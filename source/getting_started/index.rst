@@ -34,7 +34,7 @@ Connecting to Our Servers:
 ==========================
 Use ssh to connect to our servers. ssh is included on Mac and Linux and can used via the command line. If you are on Windows you will need additional software, most commonly PuTTY, to access our servers over ssh.
 
-Connecting Off Campus:
+Connecting From Off Campus:
 ----------------------
 If you are off the campus network you will have to use PSU's vpn client OR ssh onto hera.rc.pdx.edu and then ssh onto the server you want to access from there.
 
@@ -54,7 +54,7 @@ There are several options for storage on our systems.
 
 Home Directories:
 -----------------
-Your home directory (``~``) is your own personal default storage space. When you connect to a server via ``ssh`` you are in your home directory. Home directory space is **very limited**. Do not store large files here; only configuration files, documents, and locally built programs. The compute servers share home directories.
+Your home directory (``~``) is your own personal default storage space. When you connect to a server via ``ssh`` you are in your home directory. Home directory space is **very limited**. Do not store large files here--only configuration files, documents, and locally built programs. The compute servers share home directories.
 
 Scratch Drives:
 ---------------
