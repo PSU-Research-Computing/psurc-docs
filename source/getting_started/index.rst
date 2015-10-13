@@ -60,7 +60,9 @@ Scratch Drives
 --------------
 Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fast storage devices that you can use to store the data you want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
 
-**Scratch drive locations:**
+========================
+Scratch drive locations:
+========================
 
 Compute Servers (Circe/Hecate): 
   1. ``/disk/scratch``
