@@ -13,11 +13,11 @@ There are two kinds of computing services for running jobs that ARC provides, Co
 
 Compute Servers
 ---------------
-When you make a research account you will have access to our compute servers Circe and Hecate by default. These servers are just large linux computers that allow multiple users to run jobs at once. Once you are connected to one of the compute servers, you can run jobs in the command line like you would on a normal linux computer, just be mindful of other users.
+When you make a research account you will have access to our compute servers Circe and Hecate by default. These servers are large computers running linux that allow multiple users to run jobs simultaneously. Once you are connected to a compute servers, you can run jobs in the command line like you would on a normal linux computer, just be mindful of other users and their jobs.
 
 Compute Clusters
 ----------------
-A compute cluster is a set of networked computers that act as one. Compute clusters provide much more power than the compute servers Circe and Hecate. We have two clusters here at ARC, Hydra and Gravel. If you want access to the compute clusters you will have to request access in addition to your regular research account.
+A compute cluster is a set of networked computers that act as one. Compute clusters provide much more power for parallel jobs than the compute servers Circe and Hecate. We have two clusters here at ARC, Hydra and Gravel. If you want access to the compute clusters you will have to request access in addition to your regular research account. To request access to ARC's compute clusters please contact: consultants@pdx.edu 
 
 Additional Information About Our Servers
 ----------------------------------------
@@ -32,11 +32,11 @@ Additional Information About Our Servers
 
 Connecting to Our Servers
 =========================
-Use ssh to connect to our servers. ssh is included on Mac and Linux and can used via the command line. If you are on Windows you will need additional software, most commonly PuTTY, to access our servers over ssh.
+``ssh`` is used to connect to our servers. ``ssh`` is included on Mac OSX and Linux and can used via the command line. If you are on Windows you will need additional software, most commonly ``PuTTY``, to access our servers over ``ssh``.
 
 Connecting From Off Campus
 --------------------------
-If you are off the campus network you will have to use PSU's vpn client OR ssh onto hera.rc.pdx.edu and then ssh onto the server you want to access from there.
+If you are off the campus network you will have to use PSU's ``vpn client`` OR ``ssh`` onto ``hera.rc.pdx.edu`` and then ``ssh`` onto the server you want to access from there.
 
 Additional Information About Connecting
 ---------------------------------------
@@ -58,7 +58,7 @@ Your home directory (``~``) is your own personal default storage space. When you
 
 Scratch Drives
 --------------
-Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fast storage devices that you can use to store the data you want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
+Each server has its own Scratch Drive or ``scratch space``. Scratch Drives are fast storage devices that you can use to store the data you want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
 
 =======================
 Scratch drive locations
