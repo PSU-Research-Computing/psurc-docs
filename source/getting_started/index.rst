@@ -63,7 +63,6 @@ Each server has its own Scratch Drive or 'scratch space'. Scratch Drives are fas
 ========================
 Scratch drive locations:
 ========================
-
 Compute Servers (Circe/Hecate): 
   1. ``/disk/scratch``
 
