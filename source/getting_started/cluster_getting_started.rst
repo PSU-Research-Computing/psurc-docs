@@ -13,8 +13,8 @@ Our systems use the ``scheduler`` ``slurm``. Documentation on how to use slurm i
 .. toctree::
     :maxdepth: 2
     :glob:
-
-
+    :any:
     slurm
+    gettings_started
 
 
