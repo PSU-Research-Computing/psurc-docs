@@ -60,6 +60,8 @@ Scratch Drives
 --------------
 Each server has its own Scratch Drive or ``scratch space``. Scratch Drives are fast storage devices that you can use to store the data you want to run your jobs on. Scratch Drives are only intended to be used as short-term storage so please move your data off of scratch when you are done with your analysis. 
 
+If you are going to use a scratch drive **please make a directory named after yourself to keep all of your files in**.
+
 =======================
 Scratch drive locations
 =======================
