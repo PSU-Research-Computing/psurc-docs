@@ -93,15 +93,13 @@ If you are running jobs out of a python virtualenv you will need to use the **fu
 
 Example: I created a virtualenv with python 2.7.7 called ``env2`` that is in my home directory (``/home/me/``). I want to run a python script I wrote called ``my_script.py`` on the slurm scheduler.
 
-Normally I would just run the command:
+Normally I would just run the command: ::
 
-::
-    > python my_script.py
+  > python my_script.py
 
-But because I want to run this through slurm on Hydra I need to use the **full path** to python (this line will go into your slurm batch file):
+But because I want to run this through slurm on Hydra I need to use the **full path** to python (this line will go into your slurm batch file): ::
 
-::
-    > srun /home/me/env2/bin/python my_script.py
+  > srun /home/me/env2/bin/python my_script.py
 
 Setting Python Evironment Variables
 -----------------------------------
@@ -111,24 +109,21 @@ Setting Python Evironment Variables
 Setting PYTHONPATH:
 -------------------
 
-PYTHONPATH points to extra libraries you want to use with your script. In our case, we point it two the default libraries provied by pyenv.
+``PYTHONPATH`` points to extra libraries you want to use with your script. In our case, we point it to the default libraries found in the pyenv installation.
 
-Example: Type this into the command line on your head node before your run your slurm script
+Example: Type this into the command line on your head node before your run your slurm script ::
 
-::
-    > export PYTHONPATH=/share/apps/pyenv/versions/<version_you_are_using>/lib/python<version>
+  > export PYTHONPATH=/share/apps/pyenv/versions/<version_you_are_using>/lib/python<version>
 
 Replace <version_you_are_using> with the version of python you chose to make your env with.
 
-Example: If you chose to use python 2.7.7 your ``PYTHONPATH`` would be 
+Example: If you chose to use python 2.7.7 your ``PYTHONPATH`` would be ::
 
-::
-    > export PYTHONPATH=/share/apps/pyenv/versions/2.7.7/lib/python2.7
+  > export PYTHONPATH=/share/apps/pyenv/versions/2.7.7/lib/python2.7
 
-If you used python 3.4.3 your ``PYTHONPATH`` would be:
+If you used python 3.4.3 your ``PYTHONPATH`` would be: ::
 
-::
-    > export PYTHONPATH=/share/apps/pyenv/versions/3.4.3/lib/python3.4
+  > export PYTHONPATH=/share/apps/pyenv/versions/3.4.3/lib/python3.4
 
 
 Setting PYTHONHOME
@@ -136,10 +131,9 @@ Setting PYTHONHOME
 
 PYTHONHOME is an environment variable that points to the python executable you want to use. PYTHONHOME should be the path to your virtualenv directory.
 
-Example: I created a virtualenv with python 2.7.7 called ``env2`` that is in my home directory (``/home/me/``).
+Example: I created a virtualenv with python 2.7.7 called ``env2`` that is in my home directory (``/home/me/``). ::
 
-::
-    > export PYTHONHOME=/home/me/env2
+  > export PYTHONHOME=/home/me/env2
 
 Running your job
 ----------------
