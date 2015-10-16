@@ -13,11 +13,24 @@ Activate pyenv in your environment
 ==================================
 You must add the following lines in either your ``~/.bash_profile`` or ``~/.bashrc file``
 
+Compute servers (Circe/Hecate):
+-------------------------------
+
 .. code-block:: sh
 
   export PYENV_ROOT="/vol/apps/system/python/pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
+
+Compute Clusters (Hydra):
+-------------------------
+
+::
+
+  export PYENV_ROOT="/share/apps/pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+
 
 Not sure which file to edit? See :ref:`dotfiles`.
 
@@ -71,3 +84,66 @@ To reactivate an environment you have already created type: ::
     source my_environment/bin/activate
 
 Now you can freely install packages with ``pip`` once again!!
+
+Using Pyenv and Virtualenv on Hydra
+===================================
+Because hydra uses a scheduler to run jobs using pyenv requires a few extra steps to get jobs running.
+
+If you are running jobs out of a python virtualenv you will need to use the **full path** to the python in your virtualenv in your slurm batch script.
+
+Example: I created a virtualenv with python 2.7.7 called ``env2`` that is in my home directory (``/home/me/``). I want to run a python script I wrote called ``my_script.py`` on the slurm scheduler.
+
+Normally I would just run the command:
+
+::
+    > python my_script.py
+
+But because I want to run this through slurm on Hydra I need to use the **full path** to python (this line will go into your slurm batch file):
+
+::
+    > srun /home/me/env2/bin/python my_script.py
+
+Setting Python Evironment Variables
+-----------------------------------
+
+**WAIT!!!** You are not completely ready to run jobs through slurm quite yet. Before you can run your jobs you need to set two ``environment variables``, ``PYTHONPATH`` and ``PYTHONHOME``:
+
+Setting PYTHONPATH:
+-------------------
+
+PYTHONPATH points to extra libraries you want to use with your script. In our case, we point it two the default libraries provied by pyenv.
+
+Example: Type this into the command line on your head node before your run your slurm script
+
+::
+    > export PYTHONPATH=/share/apps/pyenv/versions/<version_you_are_using>/lib/python<version>
+
+Replace <version_you_are_using> with the version of python you chose to make your env with.
+
+Example: If you chose to use python 2.7.7 your ``PYTHONPATH`` would be 
+
+::
+    > export PYTHONPATH=/share/apps/pyenv/versions/2.7.7/lib/python2.7
+
+If you used python 3.4.3 your ``PYTHONPATH`` would be:
+
+::
+    > export PYTHONPATH=/share/apps/pyenv/versions/3.4.3/lib/python3.4
+
+
+Setting PYTHONHOME
+------------------
+
+PYTHONHOME is an environment variable that points to the python executable you want to use. PYTHONHOME should be the path to your virtualenv directory.
+
+Example: I created a virtualenv with python 2.7.7 called ``env2`` that is in my home directory (``/home/me/``).
+
+::
+    > export PYTHONHOME=/home/me/env2
+
+Running your job
+----------------
+
+After you have set these evironment variables in your shell you are set to schedule jobs through slurm. These environment variables will only live as long as your session is open. You will have to set them every time you login and want to run a job with your virtualenv in slurm. 
+
+You can add ``PYTHONPATH`` and ``PYTHONHOME`` to your ``.bashrc`` to make the changes last after you logout. This will likely cause issues when creating new virtualenvs, using pyenv and using the python interpreter outside of your env and slurm. 
