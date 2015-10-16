@@ -25,5 +25,5 @@ Hecate
 | **Special Hardware** |                        |
 |                      |                        |
 +----------------------+------------------------+
-| **HyperThreading**   | Enabled                |
+| **HyperThreading**   | Disabled               |
 +----------------------+------------------------+

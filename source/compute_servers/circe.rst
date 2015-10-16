@@ -25,7 +25,7 @@ Circe
 | **Special Hardware** | NVIDIA GK110GL         |
 |                      | [Tesla K20m] (rev a1)  |
 +----------------------+------------------------+
-| **HyperThreading**   | Enabled                |
+| **HyperThreading**   | Disabled               |
 +----------------------+------------------------+
 
 .. _tesla:
