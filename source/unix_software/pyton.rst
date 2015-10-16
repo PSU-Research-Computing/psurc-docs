@@ -93,15 +93,15 @@ This section is assuming that you have already created a virtualenv with pyenv a
 
 Using Full Path to Python
 -------------------------
-If you are running jobs out of a python virtualenv you will need to use the **full path** to the python in your virtualenv in your slurm batch script.
+If you want to run jobs with a python virtualenv in slurm you will need to use the **full path** to the python installed in your virtualenv in the commands in your slurm script.
 
 **Example:** You created a virtualenv with python 2.7.7 called ``env2`` that is in your home directory (``/home/me/``). You want to run a python script you wrote called ``my_script.py`` on the slurm scheduler.
 
-Normally you would just run the command: ::
+If you were running a python script in slurm with the default system python this line would be in your slurm script: ::
 
-  > python my_script.py
+  > srun python my_script.py
 
-But because you want to run this through slurm on Hydra you need to use the **full path** to the python in your virtualenv (this line will go into your slurm batch file): ::
+But because you are using a personal virtualenv you need to specify **full path** to the python in your virtualenv (this line will go into your slurm batch file): ::
 
   > srun /home/me/env2/bin/python my_script.py
 
