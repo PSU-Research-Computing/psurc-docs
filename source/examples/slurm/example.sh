@@ -13,50 +13,58 @@
  #SBATCH       # disabled
 
 ##
-## Slurm SBATCH configuration options start here.
+## Slurm SBATCH configuration options 
 ##
 
 ## The name of the job that will appear in the output of squeue, qstat, etc.
+#
 #SBATCH --job-name=this-is-the-job-name
 
 
 ## max run time HH:MM:SS
-
+#
 #SBATCH --time=10:00:00
 
 
 ## -N, --nodes=<minnodes[-maxnodes]>
 ## Request that a minimum of minnodes nodes (servers) be allocated to this job.
 ## A maximum node count may also be specified with maxnodes.
-
+#
 #SBATCH --nodes 1-3
 
 
 ## -n, --ntasks=<number>
-## This option advises the SLURM controller that job steps run within the
-## allocation will launch a maximum of number tasks and to provide for
-## sufficient resources. The default is one task per node, but note
-## that the --cpus-per-task option will change this default.
+## The ntasks option is used to allocate resources for parallel jobs (OpenMPI, FreeMPI, etc.).
+## Regular shell commands can also be run in parrallel by toggling the ntasks option and prefixing the command with 'srun'
+## ntasks default value is 1
+## THIS OPTION IS NOT USED TO RESERVE CPUS FOR MULTITHREADED JOBS; See --cpus-per-task
+## Mulithreaded jobs only use one task. Asking for more tasks will make it harder for your job to schedule and run.
+#
+#SBATCH -n 1
 
-#SBATCH -n 5
-
+## --cpus-per-task=<number>
+## The cpus-per-task option reserves a set number of CPUs (cores) for each task you request.
+## The cpus-per-task option can be used to reserve CPUs for a multithreaded job
+## The default value is 1
+#
+#SBATCH --cpus-per-task=1
 
 ## For hydra, main and main2 are the available partitions.  This line is safe to omit
 ## on gravel as CLUSTER is the only partition.  Check /etc/partitions.conf for currently
 ## defined partitions.
-
+#
 #SBATCH --partition main2,main
 
 
-##
-## Commands start here
-##
+## Command(s) to run.
+## You specify what commands to run in your batch below.
+## All commands will be run sequentially unless prefixed with the 'srun' command 
+## To run this example in sbatch enter the command: 'sbatch ./example.sh'
+## The output from this example would be written to a file called slurm-XXX.out where XXX is the jobid
+## The slurm out file will be located in the directory where sbatch was executed.
 
-## Command(s) to run.  If this example file is run as is, the effect will be the creation of
-## a file called slurm-ZZZ.out in the current directory containing "Hello, world!" five times.
-## The ZZZ is the job number that is printed after you run "sbatch example.sh".
 MESSAGE='Hello, world!'
-srun echo ${MESSAGE}
+echo ${MESSAGE}
 
 ## Another example command
-# srun my_computation_worker /home/user/computation_worker.conf
+# my_computation_worker /home/user/computation_worker.conf
