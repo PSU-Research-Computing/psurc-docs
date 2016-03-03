@@ -1,4 +1,4 @@
-..  pyton.rst
+..  python.rst
 
 ******
 Python
@@ -11,7 +11,7 @@ If you are interested in installing your own python packages to your home folder
 
 Activate pyenv in your environment
 ==================================
-You must add the following lines in either your ``~/.bash_profile`` or ``~/.bashrc file``
+You must add the following lines in either your ``~/.bashrc file``
 
 Compute servers (Circe/Hecate):
 -------------------------------
@@ -22,12 +22,12 @@ Compute servers (Circe/Hecate):
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
 
-Compute Clusters (Hydra):
--------------------------
+Compute Clusters (Hydra/Gravel):
+--------------------------------
 
 ::
 
-  export PYENV_ROOT="/share/apps/pyenv"
+  export PYENV_ROOT="/share/apps/user/stow/pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
 
@@ -144,4 +144,4 @@ Running your job
 
 After you have set these evironment variables in your shell you are set to schedule jobs through slurm. These environment variables will only live as long as your session is open. You will have to set them every time you login and want to run a job with your virtualenv in slurm. 
 
-You can add ``PYTHONPATH`` and ``PYTHONHOME`` to your ``.bashrc`` to make the changes last after you logout. This will likely cause issues when creating new virtualenvs, using pyenv and using the python interpreter outside of your env and slurm. 
+You can add ``PYTHONPATH`` and ``PYTHONHOME`` to your ``~/.bashrc`` to make the changes last after you logout. This will likely cause issues when creating new virtualenvs, using pyenv and using the python interpreter outside of your env and slurm. 
