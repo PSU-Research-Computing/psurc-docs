@@ -46,7 +46,7 @@ or the ``switch`` parameter to switch that library to the defualt: ::
 
 Now once you have switched to or are using a local library you can go ahead and install ``perl`` modules locally with ``cpanm``: ::
 
-  $> cpamn Moo
+  $> cpanm Moo
 
 To check if your installation worked check it with: ::
 
