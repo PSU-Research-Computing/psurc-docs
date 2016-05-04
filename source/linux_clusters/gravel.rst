@@ -4,6 +4,8 @@
 Gravel Cluster
 **************
 
+Gravel is in the process of being decomissioned and can no longer be accessed publicly.
+
 
 Gravel Specifications
 =====================
