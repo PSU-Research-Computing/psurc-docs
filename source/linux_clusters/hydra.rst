@@ -12,7 +12,7 @@ Hydra Specifications
 ====================
 
 +----------------------+------------------------+------------------------+----------------------+
-|    Server Domain     |  ``hydra.rc.pdx.edu``  |  ``compute-0-[0-13]``  | ``compute-1-[0-17]`` |
+|    Server Domain     |  ``hydra.rc.pdx.edu``  |  ``compute-0-[0-13]``  | ``compute-1-[0-11]`` |
 +======================+========================+========================+======================+
 | **Model**            | Dell PowerEdge R720    | Dell PowerEdge R620    | Dell PowerEdge R900  |
 +----------------------+------------------------+------------------------+----------------------+
@@ -28,7 +28,9 @@ Hydra Specifications
 +----------------------+------------------------+------------------------+----------------------+
 | **Special Hardware** | SSE4_2                 | SSE4_2                 |                      |
 +----------------------+------------------------+------------------------+----------------------+
-| **Hyper Threading**  | Enabled                | Enabled                | N/A                  |
+| **Hyper Threading**  | Enabled                | Disabled               | N/A                  |
++----------------------+------------------------+------------------------+----------------------+
+| **Network**          | N/A                    | 10 Gigabit             | 1 Gigabit            |
 +----------------------+------------------------+------------------------+----------------------+
 
 .. figure:: /img/hydra.JPG
@@ -39,7 +41,7 @@ Hydra Specifications
 Applications
 ============
 
-Applications not managed by the slurm roll system are installed to::
+Applications that have been compiled/configured locally are stored in::
 
   /share/apps
 
