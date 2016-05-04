@@ -13,7 +13,7 @@ If you need a specific cluster configuration not found on Hydra we might be able
 Deino Specifications
 ====================
 
-+----------------------+-----------------------------------------------+
++----------------------+------------------------+----------------------+
 |    Server Domain     |  ``deino.rc.pdx.edu``  | ``compute-0-[0-7]``  |
 +======================+========================+======================+
 | **Model**            | Dell PowerEdge R900    | Dell PowerEdge R900  |
