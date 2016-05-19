@@ -2,7 +2,7 @@
 Rocks Cluster Distribution
 **************************
 
-Hydra and Gravel both run `ROCKS 6.1.1 <http://central6.rocksclusters.org/roll-documentation/base/6.1.1/>`_ with the following rolls installed:
+Hydra, Deino, and Gravel all run `ROCKS 6.1.1 <http://central6.rocksclusters.org/roll-documentation/base/6.1.1/>`_ with the following rolls installed:
 
 - area51
 - base
