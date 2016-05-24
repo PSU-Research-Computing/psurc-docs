@@ -8,8 +8,6 @@ ARC aims to supply robust up-to-date versions of GCC.
 
 Currently we support the lastest release of every major version of GCC. If there is a version of GCC that isn't supported that you need please let us know and we'll get to building it for you.
 
-    
-
 GCC on compute servers (Circe/Hecate):
 ======================================
 
@@ -34,6 +32,7 @@ Versions Currenty Supported:
 
 Languages Currently Supported:
 ------------------------------
+
 * C
 * C++
 * Objective C
@@ -60,6 +59,7 @@ Versions Currenty Supported:
 
 Languages Currently Supported:
 ------------------------------
+
 * C
 * C++
 * Objective C
