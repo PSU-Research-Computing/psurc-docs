@@ -16,6 +16,7 @@ GCC on compute servers (Circe/Hecate):
 All versions of GCC can be found under:
 
 .. code-block:: sh
+
     /vol/apps/gcc/
 
 Versions Currenty supported:
