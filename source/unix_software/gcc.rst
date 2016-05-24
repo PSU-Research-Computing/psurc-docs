@@ -19,7 +19,7 @@ All versions of GCC can be found under:
 
     /vol/apps/gcc/
 
-Versions Currenty supported:
+Versions Currenty Supported:
 ----------------------------
 
 * 4.4.7 (system)
@@ -32,6 +32,14 @@ Versions Currenty supported:
 * 5.3.0
 * 6.1.0
 
+Languages Currently Supported:
+------------------------------
+* C
+* C++
+* Objective C
+* Objective C++
+* Fortran
+
 .. note:: GCC on the compute servers does not support 32 bit 
     
 GCC on Clusters (Hydra/Deino):
@@ -41,7 +49,7 @@ We are currently working on building GCC on the clusters.
 
 GCC has been built up to 4.9.3 on Deino.
 
-Versions Currenty supported:
+Versions Currenty Supported:
 ----------------------------
 
 * 4.4.7 (system)
@@ -49,6 +57,15 @@ Versions Currenty supported:
 * 4.7.4
 * 4.8.5
 * 4.9.3
+
+Languages Currently Supported:
+------------------------------
+* C
+* C++
+* Objective C
+* Objective C++
+* Fortran
+
 
 .. note:: Newer GCC builds are not yet available on Hydra
 
