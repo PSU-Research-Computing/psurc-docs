@@ -77,7 +77,7 @@ Using a non-system GCC is done serveral different ways depending on your use-cas
 Compiling a single file:
 ------------------------
 
-First, set your ``LD_LIBRARY_PATH`` to include the libraries of gcc build you want to use. (This configuration will change when you log out or change shells)
+First, set your ``LD_LIBRARY_PATH`` to include the libraries of gcc build you want to use (This configuration will change when you log out or change shells). Depending on what you are doing, this step might not be necessary.
 
 .. code-block:: sh
 
@@ -88,6 +88,7 @@ After your library path is set, compile your file using the full path to the non
 .. code-block:: sh
 
     /vol/apps/gcc/gcc-6.1.0/bin/gcc myfile.c
+
 
 Compiling a program with make:
 ------------------------------
@@ -119,3 +120,4 @@ Before configuring your software set the nesseary compiler environment variables
     make install
 
 
+.. note:: The LD_LIBRARY_PATH variable doesn't always need to be set. Consult ./configure --help for more infomation
