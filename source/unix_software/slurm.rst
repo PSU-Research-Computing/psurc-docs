@@ -5,7 +5,11 @@ Slurm Cluster Scheduler
 ***********************
 
 
-This section contains information on general slurm use.  If this is your first time running slurm, it is recommended that you read over some of the basics on the official `Slurm Website <http://slurm.schedmd.com/documentation.html>`_ and watch this introductory video: `Introduction to slurm tools video <https://www.youtube.com/watch?v=U42qlYkzP9k>`_
+This section contains information on general slurm use.  If this is your first 
+time running slurm, it is recommended that you read over some of the basics on 
+the official `Slurm Website <http://slurm.schedmd.com/documentation.html>`_ and
+watch this introductory video: 
+`Introduction to slurm tools <https://www.youtube.com/watch?v=U42qlYkzP9k>`_
 
 .. figure:: /img/slurm-video.png
    :alt: A video on launching slurm jobs
@@ -13,19 +17,23 @@ This section contains information on general slurm use.  If this is your first t
 Example Job Submission
 ----------------------
 
-To submit a job to the scheduler, first figure out what kind of resource allocation you need.  Once you have that set up a launching script similar to the following:
+To submit a job to the scheduler, first figure out what kind of resource 
+allocation you need.  Once you have that set up a launching script similar 
+to the following:
 
 `Download example.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/slurm/example.sh>`_
 
 .. literalinclude:: /examples/slurm/example.sh
    :language: sh
 
-Once you write a launcher script with the correct resource allocations, you can launch your script using the following command::
+Once you write a launcher script with the correct resource allocations, you can
+launch your script using the following command::
 
   > sbatch ./example.sh
   Submitted batch job 440
 
-This submits your job to the scheduler.  You can check the status of the job queue by running::
+This submits your job to the scheduler.  
+You can check the status of the job queue by running::
 
   > squeue
     JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
