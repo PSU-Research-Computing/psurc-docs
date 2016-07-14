@@ -1,6 +1,6 @@
 #!/bin/sh
 
-## Run this file with the command line "sbatch example.sh" for a working demo.
+## Run this file with the command line "sbatch sbatch_example.sh" for a working demo.
 
 ## See http://slurm.schedmd.com/sbatch.html for all options
 ## The SBATCH lines are commented out but are still read by the Slurm scheduler
