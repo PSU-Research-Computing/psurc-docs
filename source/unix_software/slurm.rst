@@ -14,32 +14,44 @@ watch this introductory video:
 .. figure:: /img/slurm-video.png
    :alt: A video on launching slurm jobs
    :target: https://www.youtube.com/watch?v=U42qlYkzP9k
-Example Job Submission
-----------------------
 
-To submit a job to the scheduler, first figure out what kind of resource 
-allocation you need.  Once you have that set up a launching script similar 
-to the following:
+Job Submitting Jobs
+-------------------
 
-`Download example.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/slurm/example.sh>`_
+There are two main ways you can submit jobs to slurm via the command line using
+``sbatch``, ``srun`` or a mix of the two.
 
-.. literalinclude:: /examples/slurm/example.sh
+sbatch
+======
+
+The ``sbatch`` command takes a shell script as input. This shell script
+defines settings to be passed to slurm (i.e job name, number of tasks,
+partition, etc) as well as a shell script that exectutes your desired
+computations.
+
+Example job submission using sbatch
+===================================
+
+`Download example.sh <https://raw.githubusercontent.com/PSU-OIT-ARC/arc-docs/master/source/examples/slurm/sbatch_example.sh>`_
+
+.. literalinclude:: /examples/slurm/sbatch_example.sh
    :language: sh
 
 Once you write a launcher script with the correct resource allocations, you can
 launch your script using the following command::
 
-  > sbatch ./example.sh
+  > sbatch ./sbatch_example.sh
   Submitted batch job 440
 
 This submits your job to the scheduler.  
 You can check the status of the job queue by running::
 
   > squeue
-    JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-    433     main2 trinity-    arom2  R 3-00:47:07      1 compute-1-9
-    439     main2 tip_plan   jblac2  R    2:24:55      8 compute-1-[7-8,10,12-16]
-    438     main2 fdtd_job   jblac2  R    2:37:18      8 compute-1-[0-6,11]
+    JOBID PARTITION     NAME     USER      ST    TIME      NODES NODELIST(REASON)
+    433     main sbatch_example    user7   R 3-00:47:07      1 compute-1-9
+    439     main tip_plan          user22  R    2:24:55      8 compute-1-[7-8,10,12-16]
+    438     main fdtd_job          user34  R    2:37:18      8 compute-1-[0-6,11]
+
 
 Useful Slurm Commands
 ---------------------
