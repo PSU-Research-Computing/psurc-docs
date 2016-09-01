@@ -3,15 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-*******************
-Welcome to ARC Docs
-*******************
+*************************************
+Welcome to PSURC System Documentation
+*************************************
 
-ARC Docs is a collection of documents, notes, instructions and tutorials that help explain resources available to students and faculty provided by `Academic & Research Computing`_ through PSU_\s OIT_.
+PSURC Docs is a collection of documents, notes, instructions and tutorials that help explain resources available to students and faculty provided by PSU Research Computing through PSU_\s OIT_.
 
 .. note:: Please direct any errors or questions to consultants@pdx.edu or submit a pull request with proposed changes by following the edit button in the upper right hand corner.
 
-.. _`Academic & Research Computing`: http://www.pdx.edu/arc/academic-and-research-computing
 .. _PSU: http://www.pdx.edu
 .. _OIT: http://www.pdx.edu/oit/
 
