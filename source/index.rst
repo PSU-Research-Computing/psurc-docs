@@ -9,8 +9,6 @@ Welcome to PSURC System Documentation
 
 PSURC Docs is a collection of documents, notes, instructions and tutorials that help explain resources available to students and faculty provided by PSU Research Computing through PSU_\s OIT_.
 
-.. note:: Please direct any errors or questions to consultants@pdx.edu or submit a pull request with proposed changes by following the edit button in the upper right hand corner.
-
 .. _PSU: http://www.pdx.edu
 .. _OIT: http://www.pdx.edu/oit/
 
