@@ -6,47 +6,28 @@
 Getting Started
 ***************
 
-Server Resources
-=================
+How Do I Log In?
+================
 
-There are two kinds of computing services for running jobs that ARC provides, Compute Servers and Clusters.
+Our computing resources must be connected to using ``ssh``. ``ssh`` is installed
+come preinstalled on both linux and macOS. If you are using windows, you must
+install a program to use ``ssh``. ``PuTTY`` is commonly used used for ``ssh`` 
+on windows.
 
-Compute Servers
----------------
-When you make a research account you will have access to our compute servers Circe and Hecate by default. These servers are large computers running linux that allow multiple users to run jobs simultaneously. Once you are connected to a compute servers, you can run jobs in the command line like you would on a normal linux computer, just be mindful of other users and their jobs.
+`ssh tutorial for linux and mac <https://support.rackspace.com/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os/>`_
+`ssh tutorial for windows (PuTTY) <https://mediatemple.net/community/products/dv/204404604/using-ssh-in-putty->`_
 
-Compute Clusters
-----------------
-A compute cluster is a set of networked computers that act as one. Compute clusters provide much more power for parallel jobs than the compute servers Circe and Hecate. We have two clusters here at ARC, Hydra and Gravel. If you want access to the compute clusters you will have to request access in addition to your regular research account. To request access to ARC's compute clusters please contact: consultants@pdx.edu 
-
-Additional Information About Our Servers
-----------------------------------------
-.. toctree::
-    :maxdepth: 2
-    :glob:
-
-
-    knowing_your_software
-    pick_a_server
-
+Logging In Off Campus
+---------------------
+If you are off the campus network you will have to use PSU's ``vpn client`` OR ``ssh`` onto ``hera.rc.pdx.edu`` and then ``ssh`` onto the server you want to access from there.
+ 
+`PSU's VPN <https://www.pdx.edu/oit/virtual-private-network-vpn>`_
 
 Connecting to Our Servers
 =========================
 ``ssh`` is used to connect to our servers. ``ssh`` is included on Mac OSX and Linux and can used via the command line. If you are on Windows you will need additional software, most commonly ``PuTTY``, to access our servers over ``ssh``.
 
-Connecting From Off Campus
---------------------------
-If you are off the campus network you will have to use PSU's ``vpn client`` OR ``ssh`` onto ``hera.rc.pdx.edu`` and then ``ssh`` onto the server you want to access from there.
 
-Additional Information About Connecting
----------------------------------------
-.. toctree::
-    :maxdepth: 2
-    :glob:
-
-
-    connecting
- 
 
 Storage
 =======
