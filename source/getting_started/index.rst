@@ -9,8 +9,8 @@ Getting Started
 How Do I Log In?
 ================
 
-Our computing resources must be connected to using ``ssh``. ``ssh`` is installed
-come preinstalled on both linux and macOS. If you are using windows, you must
+Our computing resources must be connected to using ``ssh``. ``ssh``
+comes preinstalled on both linux and macOS. If you are using windows, you must
 install a program to use ``ssh``. ``PuTTY`` is commonly used used for ``ssh`` 
 on windows.
 
