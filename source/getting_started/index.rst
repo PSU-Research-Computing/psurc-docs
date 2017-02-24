@@ -82,14 +82,3 @@ Research shares can be found in: ``/vol/share`` on all systems
 .. note:: Research Shares are the same as the ``I-Drive`` on windows computers connected to PSU's network
 
 
-Other Tutorials on Getting Started
-==================================
-.. toctree::
-    :maxdepth: 2
-    :glob:
-
-
-    tuning
-    moving_files
-    be_nice
-    more_resources
