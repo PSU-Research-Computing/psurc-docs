@@ -24,6 +24,21 @@ If you are off the campus network you will have to use PSU's ``vpn client`` OR
  
 `PSU's VPN <https://www.pdx.edu/oit/virtual-private-network-vpn>`_
 
+
+How Do I Copy Files From My Personal Computer onto a Server?
+============================================================
+
+The easiest way to move files between computers is using ``FileZilla``,
+an ``FTP`` client.
+
+`FileZilla tutorial <https://wiki.filezilla-project.org/Using>`_
+
+If you are on linux or mac you can use the ``scp`` command to copy files between
+your computer and PSU's computing resources.
+
+`scp syntax examples <http://www.hypexr.org/linux_scp_help.php>`_ 
+
+
 Where Do I Store My Files?
 ==========================
 There are several options for storage on our systems.
