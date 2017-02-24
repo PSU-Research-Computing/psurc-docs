@@ -23,11 +23,6 @@ If you are off the campus network you will have to use PSU's ``vpn client`` OR `
  
 `PSU's VPN <https://www.pdx.edu/oit/virtual-private-network-vpn>`_
 
-Connecting to Our Servers
-=========================
-``ssh`` is used to connect to our servers. ``ssh`` is included on Mac OSX and Linux and can used via the command line. If you are on Windows you will need additional software, most commonly ``PuTTY``, to access our servers over ``ssh``.
-
-
 
 Storage
 =======
