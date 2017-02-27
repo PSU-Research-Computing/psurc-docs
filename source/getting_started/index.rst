@@ -88,3 +88,54 @@ Research shares can be found in: ``/vol/share`` on all systems
 .. note:: Research Shares are the same as the ``I-Drive`` on windows computers connected to PSU's network
 
 
+How Do I Run Jobs?
+==================
+
+on Circe/Hecate?
+----------------
+
+Simply run the disired command straight from your ssh connection:
+    1. Identify the software and settings you want to use for your analysis
+    2. If not installed, request an installation
+    3. Connect to the desired server via ssh
+    4. Check server load before running job with ``htop`` command
+    5. If server has resources avaliable, run your command strait from the command line
+
+on the Coeus Cluster?
+---------------------
+
+Running jobs on the Coeus cluster is slightly more complex then on Circe/Hecate.
+Instead of running your jobs directly from the comamnd line, you must submit 
+your jobs to the ``slurm`` scheduler, which then runs your job on the cluster
+for you.
+
+.. Finish this
+
+Why is my job running slowly?
+-----------------------------
+
+Circe/Hecate:
+-------------
+
+The first thing to check is the server load. If the server is bogged down with
+other user's jobs your job will run slowly. The easiest way to check server
+load is using the ``htop`` command. 
+
+.. Elaborate on htop
+
+Coeus Cluster:
+--------------
+
+Because of the cluster's size and PSU's current computing needs, heavy load is
+unlikley to slow your job down, though you should still check before 
+troubleshooting further.
+
+To check Coeus resource utilization, open your web browser and go to the
+following url to pull up the ``ganglia`` web interface. (You must be on campus
+or using PSU's VPN to access this page)
+
+``http://coeus.rc.pdx.edu``
+
+If the cluster is not under heavy load and your job is still running slowly,
+the problem likely lies in either your slurm configuration or the software you
+are running.
