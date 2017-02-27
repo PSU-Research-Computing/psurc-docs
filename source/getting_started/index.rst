@@ -6,6 +6,12 @@
 Getting Started
 ***************
 
+In order to understand this page and use PSURC's computing resources you must
+have a basic understanding of the unix command line (used by linux and mac
+computers). You can find a good, quick tutorial that'll teach you the basics
+`here <https://learnpythonthehardway.org/book/appendixa.html>`_
+
+
 How Do I Log In?
 ================
 
