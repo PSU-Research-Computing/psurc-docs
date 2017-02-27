@@ -23,8 +23,8 @@ on windows.
 `ssh tutorial for linux and mac <https://support.rackspace.com/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os/>`_
 `ssh tutorial for windows (PuTTY) <https://mediatemple.net/community/products/dv/204404604/using-ssh-in-putty->`_
 
-Logging In Off Campus
----------------------
+How Do I Connect From Off Campus?
+---------------------------------
 If you are off the campus network you will have to use PSU's ``vpn client`` OR 
 ``ssh`` onto ``hera.rc.pdx.edu`` and then ``ssh`` onto the server you want to access from there.
  
